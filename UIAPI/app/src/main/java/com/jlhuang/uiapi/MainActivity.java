@@ -10,7 +10,7 @@ import android.widget.AdapterView.*;
 public class MainActivity extends Activity 
 {
 	private String[] data = { "TextView文本视图", "Button按钮", "EditText文本输入框", "CheckBox复选",
-		"RadioButton单选", "ProgressBar圆形进度条", "ProgressBar直线进度条", "SeekBar", "Switch切换开关", "Dialog" };
+		"RadioButton单选", "ProgressBar圆形进度条", "ProgressBar直线进度条", "SeekBar拖动进度条", "Switch开关", "Dialog对话框" };
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
