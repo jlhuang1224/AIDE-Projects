@@ -1,4 +1,3 @@
-
 package com.jlhuang.uiapi;
 
 import android.app.*;
