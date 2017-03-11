@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid 
-		android:color="#f0f0f0" />
-
-    <corners 
-		android:topLeftRadius="2dp" 
-        android:bottomLeftRadius="2dp"
-		android:topRightRadius="2dp" 
-        android:bottomRightRadius="2dp" />
-
-    <stroke 
-		android:width="2dp" android:color="#aaaaaa"/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item><!--Miaobian-->
+		<shape>
+			<corners 
+				android:topLeftRadius="3dp" 
+				android:bottomLeftRadius="3dp"
+				android:topRightRadius="3dp" 
+				android:bottomRightRadius="3dp"/>
+			<solid android:color="#aaaaaa" />
+		</shape>
+	</item>
+	<item
+		android:left="1dp"
+		android:top="1dp"
+		android:right="1dp"
+		android:bottom="1dp">
+		<shape>
+			<corners
+				android:topLeftRadius="3dp" 
+				android:bottomLeftRadius="3dp"
+				android:topRightRadius="3dp" 
+				android:bottomRightRadius="3dp"/>
+			<solid android:color="#f0f0f0" />
+		</shape>
+	</item>
+</layer-list>
