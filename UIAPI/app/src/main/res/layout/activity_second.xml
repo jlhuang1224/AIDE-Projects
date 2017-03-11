@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#999999"
+	android:orientation="vertical">
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:orientation="horizontal">
+		<TextView
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:text="@string/textview_text_title_dark"
+			style="@style/textview_title_style_dark"/>
+
+		<TextView
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:background="#333333"/>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:text="@string/textview_text_text_dark"
+			style="@style/textview_text_style_dark"/>
+
+		<TextView
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:background="#555555"/>
+		
+	</LinearLayout>
+	
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="100dp"
+			android:orientation="horizontal">
+			
+			<TextView
+				android:layout_width="300dp"
+				android:layout_height="100dp"
+				android:text="@string/textview_text_title_light"
+				style="@style/textview_title_style_light"/>
+
+			<TextView
+				android:layout_width="300dp"
+				android:layout_height="100dp"
+				android:background="#f0f0f0"/>
+		</LinearLayout>
+		
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:text="@string/textview_text_text_light"
+			style="@style/textview_text_style_light"/>
+		<TextView
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:background="#e0e0e0"/>
+		
+	</LinearLayout>
+		
+</LinearLayout>
+

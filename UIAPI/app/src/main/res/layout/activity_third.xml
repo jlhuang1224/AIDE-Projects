@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<Button
+			android:text="Left"
+			android:layout_width="100dp"
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="20dp"
+			android:textColor="#555555"
+			style="@style/button_left_style"/>
+
+		<Button
+			android:text="Center"
+			android:layout_width="100dp"
+			android:layout_marginTop="20dp"
+			style="@style/button_center_style"/>
+
+		<Button
+			android:id="@+id/btnR"
+			android:text="Right"
+			android:layout_width="100dp"
+			android:layout_marginTop="20dp"
+			style="@style/button_right_style"/>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+		android:orientation="horizontal">
+
+		<Button
+			android:text="Left"
+			android:layout_width="wrap_content"
+			android:layout_weight="0.5"
+			android:textColor="#555555"
+			style="@style/button_left_style"/>
+
+		<Button
+			android:text="Right"
+			android:layout_width="wrap_content"
+			android:layout_weight="0.5"
+			style="@style/button_right_style"/>
+	</LinearLayout>
+	<Button
+		android:id="@+id/btnCO"
+		android:text="Center(Only One)"
+		android:layout_width="300dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+		style="@style/button_center_one_style"/>
+	
+	<Button
+		android:text="○"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+		style="@style/button_round_style"/>
+	
+	
+	
+</LinearLayout>

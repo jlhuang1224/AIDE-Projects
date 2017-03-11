@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UI API</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="textview_text_title_dark">标题文本：灰黑</string>
+	<string name="textview_text_text_dark">内容文本：灰</string>
+	<string name="textview_text_title_light">标题文本：白</string>
+	<string name="textview_text_text_light">内容文本：灰白</string>
+</resources>
