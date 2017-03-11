@@ -22,6 +22,8 @@
             android:name=".ThirdActivity"/>
 		<activity
             android:name=".FourthActivity"/>
-    </application>
+	    <activity
+            android:name=".FifthActivity"/>
+	</application>
 
 </manifest>
