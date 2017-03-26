@@ -1,68 +1,129 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
-    
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="center|top"
+	android:orientation="vertical">
+	
+	<include
+		layout="@layout/title_bar"/>
+	
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:orientation="horizontal">
-		
-		<Button
-			android:text="Left"
-			android:layout_width="100dp"
-			android:layout_marginTop="20dp"
-			android:layout_marginLeft="20dp"
-			android:textColor="#555555"
-			style="@style/button_left_style"/>
+		android:layout_height="fill_parent"
+		android:background="#fefefe">
 
-		<Button
-			android:text="Center"
-			android:layout_width="100dp"
-			android:layout_marginTop="20dp"
-			style="@style/button_center_style"/>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center|top"
+			android:orientation="vertical">
 
-		<Button
-			android:id="@+id/btnR"
-			android:text="Right"
-			android:layout_width="100dp"
-			android:layout_marginTop="20dp"
-			style="@style/button_right_style"/>
-	</LinearLayout>
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		android:layout_width="300dp"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="20dp"
-		android:layout_marginLeft="20dp"
-		android:orientation="horizontal">
+			
 
-		<Button
-			android:text="Left"
-			android:layout_width="wrap_content"
-			android:layout_weight="0.5"
-			android:textColor="#555555"
-			style="@style/button_left_style"/>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
 
-		<Button
-			android:text="Right"
-			android:layout_width="wrap_content"
-			android:layout_weight="0.5"
-			style="@style/button_right_style"/>
-	</LinearLayout>
-	<Button
-		android:id="@+id/btnCO"
-		android:text="Center(Only One)"
-		android:layout_width="300dp"
-		android:layout_marginTop="20dp"
-		android:layout_marginLeft="20dp"
-		style="@style/button_center_one_style"/>
-	
-	<Button
-		android:text="○"
-		android:layout_marginTop="20dp"
-		android:layout_marginLeft="20dp"
-		style="@style/button_round_style"/>
-	
-	
-	
+				<Button
+					android:id="@+id/btnL"
+					android:text="左Left"
+					android:layout_width="100dp"
+					android:layout_marginLeft="20dp"
+					android:layout_marginTop="20dp"
+					android:textColor="#555555"
+					style="@style/button_left_style"/>
+
+				<Button
+					android:id="@+id/btnC"
+					android:text="中Center"
+					android:layout_width="100dp"
+					android:layout_marginTop="20dp"
+					style="@style/button_center_style"/>
+
+				<Button
+					android:id="@+id/btnR"
+					android:text="右Right"
+					android:layout_width="100dp"
+					android:layout_marginTop="20dp"
+					style="@style/button_right_style"/>
+			</LinearLayout>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="300dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="20dp"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/btnL2"
+					android:text="左Left"
+					android:layout_width="150dp"
+					android:textColor="#555555"
+					style="@style/button_left_style"/>
+
+				<Button
+					android:id="@+id/btnR2"
+					android:text="右Right"
+					android:layout_width="150dp"
+					style="@style/button_right_style"/>
+			</LinearLayout>
+			<Button
+				android:id="@+id/btnCO"
+				android:text="中间(单个)Center(One)"
+				android:layout_width="300dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="20dp"
+				style="@style/button_center_one_style"/>
+
+			<Button
+				android:id="@+id/btnO"
+				android:text="Btn"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="20dp"
+				style="@style/button_round_style"/>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="70dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="20dp"
+				android:orientation="vertical">
+
+				<Button
+					android:id="@+id/btnOT"
+					android:text="文"
+					android:layout_gravity="center"
+					style="@style/button_round_style"/>
+
+				<TextView
+					android:gravity="center"
+					android:text="文字Text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="2dp"
+					android:layout_gravity="center"
+					android:textColor="#555555"
+					android:singleLine="true"
+					android:textSize="15dp" />
+
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/btnDA"
+				android:text="禁用全部按钮"
+				android:layout_width="300dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="20dp"
+				style="@style/button_center_one_style"/>
+
+			<Button
+				android:id="@+id/btnJP"
+				android:text="查看透明按钮"
+				android:layout_width="300dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="20dp"
+				style="@style/button_center_one_style"/>
+		</LinearLayout>
+	</ScrollView>
 </LinearLayout>

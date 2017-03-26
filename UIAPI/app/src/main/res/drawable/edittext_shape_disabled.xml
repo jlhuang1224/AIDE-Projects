@@ -3,10 +3,10 @@
 	<item><!--Miaobian-->
 		<shape>
 			<corners 
-				android:topLeftRadius="3dp" 
-				android:bottomLeftRadius="3dp"
-				android:topRightRadius="3dp" 
-				android:bottomRightRadius="3dp"/>
+				android:topLeftRadius="5dp" 
+				android:bottomLeftRadius="5dp"
+				android:topRightRadius="5dp" 
+				android:bottomRightRadius="5dp"/>
 			<solid android:color="#cccccc" />
 		</shape>
 	</item>
@@ -17,10 +17,10 @@
 		android:bottom="1dp">
 		<shape>
 			<corners
-				android:topLeftRadius="3dp" 
-				android:bottomLeftRadius="3dp"
-				android:topRightRadius="3dp" 
-				android:bottomRightRadius="3dp"/>
+				android:topLeftRadius="4dp" 
+				android:bottomLeftRadius="4dp"
+				android:topRightRadius="4dp" 
+				android:bottomRightRadius="4dp"/>
 			<solid android:color="#d0d0d0" />
 		</shape>
 	</item>

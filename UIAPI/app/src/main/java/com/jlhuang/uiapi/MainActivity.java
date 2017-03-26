@@ -9,6 +9,8 @@ import android.widget.AdapterView.*;
 
 public class MainActivity extends Activity 
 {
+	private Button title_bar_btn_left;
+	private TextView title_bar_title;
 	private String[] data = { "TextView文本视图", "Button按钮", "EditText文本输入框", "CheckBox复选",
 		"RadioButton单选", "ProgressBar圆形进度条", "ProgressBar直线进度条", "SeekBar拖动进度条", "Switch开关", "Dialog对话框" };
     @Override
@@ -16,6 +18,10 @@ public class MainActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
+		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
+		title_bar_btn_left.setText("");
+		title_bar_title.setText("UI API");
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
 			MainActivity.this, android.R.layout.simple_list_item_1, data);
 		ListView listView = (ListView) findViewById(R.id.list_view);
@@ -43,6 +49,7 @@ public class MainActivity extends Activity
 				}
   			  }
 		});
+		
 	}
 }
 

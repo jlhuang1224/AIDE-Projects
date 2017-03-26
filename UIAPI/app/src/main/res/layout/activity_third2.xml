@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="center|top"
+	android:orientation="vertical">
+
+	<include
+		layout="@layout/title_bar"/>
+
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/activity_third2_ScrollView"
+		android:background="@drawable/lockscreen_107">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center|top"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="340dp"
+				android:layout_height="70dp"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/btnLw"
+					android:text="左Left"
+					android:layout_width="100dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginBottom="10dp"
+					android:layout_marginLeft="20dp"
+					style="@style/button_left_translucent_style"/>
+
+				<Button
+					android:id="@+id/btnCw"
+					android:text="中Center"
+					android:layout_width="100dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginBottom="10dp"
+					style="@style/button_center_translucent_style"/>
+
+				<Button
+					android:id="@+id/btnRw"
+					android:text="右Right"
+					android:layout_width="100dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginBottom="10dp"
+					style="@style/button_right_translucent_style"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="340dp"
+				android:layout_height="70dp"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/btnL2w"
+					android:text="左Left"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="20dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="0.5"
+					style="@style/button_left_translucent_style"/>
+
+				<Button
+					android:id="@+id/btnR2w"
+					android:text="右Right"
+					android:layout_marginTop="10dp"
+					android:layout_marginRight="20dp"
+					android:layout_width="wrap_content"
+					android:layout_weight="0.5"
+					style="@style/button_right_translucent_style"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="340dp"
+				android:layout_height="70dp"
+				android:orientation="vertical">
+
+				<Button
+					android:id="@+id/btnCOw"
+					android:text="中间(单个)Center(One)"
+					android:layout_width="300dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="20dp"
+					style="@style/button_center_one_translucent_style"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="50dp"
+				android:layout_height="70dp"
+				android:layout_marginTop="0dp"
+				android:layout_marginLeft="20dp"
+				android:orientation="vertical">
+
+				<Button
+					android:id="@+id/btnOw"
+					android:text="Btn"
+					android:layout_marginTop="10dp"
+					style="@style/button_round_translucent_style"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="90dp"
+				android:orientation="vertical"
+				android:paddingLeft="20dp"
+				android:paddingRight="20dp">
+
+				<Button
+					android:id="@+id/btnOTw"
+					android:text="文"
+					android:layout_marginTop="10dp"
+					style="@style/button_round_translucent_style"
+					android:layout_gravity="center"/>
+
+				<TextView
+					android:text="文字Text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="2dp"
+					android:layout_marginBottom="10dp"
+					android:textColor="#e0e0e0"
+					android:textSize="15dp"
+					android:singleLine="true"
+					android:gravity="center"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="340dp"
+				android:layout_height="70dp"
+				android:orientation="vertical">
+
+				<Button
+					android:id="@+id/btnDAw"
+					android:text="禁用全部按钮"
+					android:layout_width="300dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="20dp"
+					android:layout_marginBottom="10dp"
+					style="@style/button_center_one_translucent_style"/>
+
+			</LinearLayout>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="点击切换背景"
+				android:layout_width="300dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				style="@style/button_center_one_translucent_style"
+				android:id="@+id/btn_set_bg"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/activitythird2TextView1"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

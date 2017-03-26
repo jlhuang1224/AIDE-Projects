@@ -9,14 +9,14 @@
 		</shape>
 	</item>
 	<item
-		android:top="2dp"
-		android:right="2dp"
-		android:bottom="2dp">
+		android:top="1dp"
+		android:right="1dp"
+		android:bottom="1dp">
 		<shape>
 			<solid android:color="#d0d0d0" />
 			<corners 
-				android:topRightRadius="7dp" 
-				android:bottomRightRadius="7dp"/>
+				android:topRightRadius="6dp" 
+				android:bottomRightRadius="6dp"/>
 		</shape>
 	</item>
 </layer-list>

@@ -1,6 +1,7 @@
 package com.jlhuang.uiapi;
 
 import android.app.*;
+import android.content.*;
 import android.os.*;
 import android.view.*;
 import android.view.View.*;
@@ -9,30 +10,79 @@ import android.widget.*;
 
 public class ThirdActivity extends Activity 
 {
+	private Button btnL;
+	private Button btnC;
 	private Button btnR;
+	private Button btnL2;
+	private Button btnR2;
 	private Button btnCO;
-	
+	private Button btnO;
+	private Button btnOT;
+	private Button btnDA;
+	private Button btnJP;
+	private Button title_bar_btn_left;
+	private TextView title_bar_title;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 		btnR = (Button)findViewById(R.id.btnR);
+		btnR2 = (Button)findViewById(R.id.btnR2);
 		btnCO = (Button)findViewById(R.id.btnCO);
-		
-		btnCO.setText("Disable Right");
-		btnCO.setOnClickListener(new OnClickListener()
+		btnL = (Button)findViewById(R.id.btnL);
+		btnL2 = (Button)findViewById(R.id.btnL2);
+		btnC = (Button)findViewById(R.id.btnC);
+		btnO = (Button)findViewById(R.id.btnO);
+		btnOT = (Button)findViewById(R.id.btnOT);
+		btnDA = (Button)findViewById(R.id.btnDA);
+		btnJP = (Button)findViewById(R.id.btnJP);
+		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
+		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
+		title_bar_btn_left.setText("↩返回");
+		title_bar_title.setText("Button按钮");
+		btnDA.setText("禁用全部按钮");
+		title_bar_btn_left.setOnClickListener(new OnClickListener ()
 			{
 				@Override
 				public void onClick(View v){
-					if(btnR.isEnabled()){
+					finish();
+				}
+			});
+		btnDA.setOnClickListener(new OnClickListener()
+			{
+				@Override
+				public void onClick(View v){
+					if(btnL.isEnabled()){
+						btnL.setEnabled(false);
+						btnC.setEnabled(false);
 						btnR.setEnabled(false);
-						btnCO.setText("Enable Right");
+						btnL2.setEnabled(false);
+						btnR2.setEnabled(false);
+						btnCO.setEnabled(false);
+						btnO.setEnabled(false);
+						btnOT.setEnabled(false);
+						btnDA.setText("启用全部按钮");
 					}else{
+						btnL.setEnabled(true);
+						btnC.setEnabled(true);
 						btnR.setEnabled(true);
-						btnCO.setText("Disable Right");
+						btnL2.setEnabled(true);
+						btnR2.setEnabled(true);
+						btnCO.setEnabled(true);
+						btnO.setEnabled(true);
+						btnOT.setEnabled(true);
+						btnDA.setText("禁用全部按钮");
 					}
 				}
 			});
+		btnJP.setOnClickListener(new OnClickListener()
+			{
+				@Override
+				public void onClick(View v){
+					Intent i = new Intent(ThirdActivity.this,Third2Activity.class);
+					startActivity(i);
+			}
+		});
 	}
 }
