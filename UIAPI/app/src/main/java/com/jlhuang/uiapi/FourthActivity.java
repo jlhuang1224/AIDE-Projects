@@ -27,6 +27,7 @@ public class FourthActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourth);
+		SetAppTitle();
 		et1 = (EditText)findViewById(R.id.et1);
 		et2 = (EditText)findViewById(R.id.et2);
 		et1w = (EditText)findViewById(R.id.et1w);
@@ -36,12 +37,8 @@ public class FourthActivity extends Activity
 		btn1w = (Button)findViewById(R.id.btn1w);
 		btn2w =(Button)findViewById(R.id.btn2w);
 		btn_set_bg2 =(Button)findViewById(R.id.btn_set_bg2);
-		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
-		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
 		activityfourthTextView1 = (TextView) findViewById(R.id.activityfourthTextView1);
 		activityfourthLinearLayout2 = (LinearLayout) findViewById(R.id.activityfourthLinearLayout2);
-		title_bar_btn_left.setText("↩返回");
-		title_bar_title.setText("EditText文本框");
 		btn_set_bg2.setText("点击切换背景");
 		btn1.setText("禁用EditText1");
 		btn2.setText("禁用EditText2");
@@ -129,4 +126,20 @@ public class FourthActivity extends Activity
 				}	
 			});
 	}
+	
+	private void SetAppTitle()
+	{
+		// TODO: Implement this method
+		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
+		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
+		title_bar_btn_left.setText("↩返回");
+		title_bar_title.setText("EditText文本框");
+		title_bar_btn_left.setOnClickListener(new OnClickListener ()
+			{
+				@Override
+				public void onClick(View v){
+					finish();
+				}
+			});
+    }
 }
