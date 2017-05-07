@@ -52,7 +52,7 @@ public class Third2Activity extends Activity
 		title_bar_btn_left.setText("↩返回");
 		btnDAw.setText("禁用全部按钮");
 		title_bar_btn_left.setTextColor(Color.parseColor("#ddf0f0f0"));
-		title_bar_title.setText("Button按钮");
+		title_bar_title.setText("Button");
 		title_bar_title.setTextColor(Color.parseColor("#ddf0f0f0"));
 		title_bar_btn_left.setOnClickListener(new OnClickListener ()
 			{

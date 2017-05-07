@@ -136,7 +136,7 @@ public class FourthActivity extends Activity
 		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
 		title_bar_btn_left.setText("↩返回");
-		title_bar_title.setText("EditText文本框");
+		title_bar_title.setText("EditText");
 		title_bar_btn_left.setOnClickListener(new OnClickListener ()
 			{
 				@Override

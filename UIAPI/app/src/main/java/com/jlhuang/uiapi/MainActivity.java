@@ -11,8 +11,8 @@ public class MainActivity extends Activity
 {
 	private Button title_bar_btn_left;
 	private TextView title_bar_title;
-	private String[] data = { "TextView文本视图", "Button按钮", "EditText文本框", "CheckBox复选",
-		"RadioButton单选", "ProgressBar圆形进度条", "ProgressBar直线进度条", "SeekBar拖动进度条", "Switch开关", "Dialog对话框" };
+	private String[] data = { "TextView", "Button", "EditText", "CheckBox",
+		"RadioButton", "ProgressBar(round)", "ProgressBar", "SeekBar", "Switch", "Dialog" };
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

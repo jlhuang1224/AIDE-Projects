@@ -28,7 +28,7 @@ public class FifthActivity extends Activity
 		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
 		title_bar_btn_left.setText("↩返回");
-		title_bar_title.setText("CheckBox复选");
+		title_bar_title.setText("CheckBox");
 		title_bar_btn_left.setOnClickListener(new OnClickListener ()
 			{
 				@Override

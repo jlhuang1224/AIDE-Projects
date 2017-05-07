@@ -43,7 +43,7 @@ public class ThirdActivity extends Activity
 		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
 		title_bar_btn_left.setText("↩返回");
-		title_bar_title.setText("Button按钮");
+		title_bar_title.setText("Button");
 		btnDA.setText("禁用全部按钮");
 		title_bar_btn_left.setOnClickListener(new OnClickListener ()
 			{

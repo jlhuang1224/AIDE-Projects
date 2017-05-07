@@ -8,8 +8,8 @@ android {
         applicationId "com.jlhuang.uiapi"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 10100
-        versionName "1.0.10alpha"
+        versionCode 10150
+        versionName "1.0.15alpha"
     }
     buildTypes {
         release {
