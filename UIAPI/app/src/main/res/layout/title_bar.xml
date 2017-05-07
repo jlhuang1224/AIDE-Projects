@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_height="70dp"
+	android:layout_height="90dp"
 	android:layout_width="match_parent"
 	android:orientation="horizontal"
+	android:fitsSystemWindows="true"  
+	android:clipToPadding="true"
 	android:background="#dd81C784">
 
 	<Button
@@ -32,7 +34,7 @@
 		android:id="@+id/title_bar_btn_right"
 		android:paddingLeft="5dp"
 		android:layout_gravity="center|end"
-		android:text="v1.0.6alpha"/>
+		android:text="v1.0.10alpha"/>
 
 </LinearLayout>
 

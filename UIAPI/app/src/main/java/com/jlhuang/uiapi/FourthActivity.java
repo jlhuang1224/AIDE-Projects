@@ -27,6 +27,9 @@ public class FourthActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourth);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		}
 		SetAppTitle();
 		et1 = (EditText)findViewById(R.id.et1);
 		et2 = (EditText)findViewById(R.id.et2);

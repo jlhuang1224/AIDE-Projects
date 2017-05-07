@@ -15,6 +15,9 @@ public class SecondActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		}
 		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
 		title_bar_btn_left.setText("↩返回");

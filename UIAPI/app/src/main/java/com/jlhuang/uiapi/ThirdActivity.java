@@ -27,6 +27,9 @@ public class ThirdActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		}
 		btnR = (Button)findViewById(R.id.btnR);
 		btnR2 = (Button)findViewById(R.id.btnR2);
 		btnCO = (Button)findViewById(R.id.btnCO);

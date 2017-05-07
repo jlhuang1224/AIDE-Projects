@@ -16,6 +16,9 @@ public class FifthActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fifth);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		}
 		SetAppTitle();
 	}
 
