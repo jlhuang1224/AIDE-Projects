@@ -45,13 +45,6 @@
 			android:textSize="15dp"/>
 
 	</LinearLayout>
-<!--
-	<Button
-		android:id="@+id/btn"
-		android:text="文"
-		android:layout_gravity="center"
-		android:drawableTop="@drawable/ic_round_btn"
-		style="@style/button_round_style"/>
--->
+
 </LinearLayout>
 
