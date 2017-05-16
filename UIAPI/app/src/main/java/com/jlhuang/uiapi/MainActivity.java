@@ -11,6 +11,7 @@ public class MainActivity extends Activity
 {
 	private Button title_bar_btn_left;
 	private TextView title_bar_title;
+	private Button show_appui_btn;
 	private String[] data = { "TextView", "Button", "EditText", "CheckBox",
 		"RadioButton", "ProgressBar(round)", "ProgressBar", "SeekBar", "Switch", "Dialog" };
     @Override
@@ -23,6 +24,18 @@ public class MainActivity extends Activity
 		}
 		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
+		show_appui_btn = (Button)findViewById(R.id.show_appui_btn);
+		show_appui_btn.setOnClickListener(new OnClickListener()
+		{
+			@Override
+			
+			public void onClick(View v)
+			{
+				Intent i = new Intent(MainActivity.this,
+									  AppUiDemoActivity.class);
+				startActivity(i);
+			}
+		});
 		title_bar_btn_left.setText("");
 		title_bar_title.setText("UI API");
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(

@@ -106,11 +106,6 @@
 					style="@style/button_center_one_translucent_style"
 					android:id="@+id/btn_set_bg2"/>
 
-				<TextView
-					android:layout_height="wrap_content"
-					android:layout_width="wrap_content"
-					android:id="@+id/activityfourthTextView1"/>
-
 			</LinearLayout>
 
 		</LinearLayout>

@@ -1,26 +1,26 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:layout_gravity="center|top"
 	android:orientation="vertical">
-	
+
 	<include
 		layout="@layout/title_bar"/>
-	
-	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+	<ScrollView
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
 		android:background="#fefefe">
 
-		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		<LinearLayout
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_gravity="center|top"
 			android:orientation="vertical">
 
-			
-
-			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			<LinearLayout
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"
 				android:orientation="horizontal">
@@ -47,8 +47,10 @@
 					android:layout_width="100dp"
 					android:layout_marginTop="20dp"
 					style="@style/button_right_style"/>
+
 			</LinearLayout>
-			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+			<LinearLayout
 				android:layout_width="300dp"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="20dp"
@@ -67,7 +69,9 @@
 					android:text="右Right"
 					android:layout_width="150dp"
 					style="@style/button_right_style"/>
+
 			</LinearLayout>
+
 			<Button
 				android:id="@+id/btnCO"
 				android:text="中间(单个)Center(One)"
@@ -105,7 +109,7 @@
 					android:layout_gravity="center"
 					android:textColor="#555555"
 					android:singleLine="true"
-					android:textSize="15dp" />
+					android:textSize="15dp"/>
 
 			</LinearLayout>
 
@@ -123,7 +127,12 @@
 				android:layout_width="300dp"
 				android:layout_marginTop="20dp"
 				android:layout_marginLeft="20dp"
-				style="@style/button_center_one_style"/>
+				style="@style/button_center_one_style"
+				android:layout_marginBottom="10dp"/>
+
 		</LinearLayout>
+
 	</ScrollView>
+
 </LinearLayout>
+

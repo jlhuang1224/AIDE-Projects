@@ -20,8 +20,8 @@ public class FourthActivity extends Activity
 	private Button btn_set_bg2;
 	private Button title_bar_btn_left;
 	private TextView title_bar_title;
-	private TextView activityfourthTextView1;
 	private LinearLayout activityfourthLinearLayout2;
+	private Boolean background = true;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,14 +40,12 @@ public class FourthActivity extends Activity
 		btn1w = (Button)findViewById(R.id.btn1w);
 		btn2w =(Button)findViewById(R.id.btn2w);
 		btn_set_bg2 =(Button)findViewById(R.id.btn_set_bg2);
-		activityfourthTextView1 = (TextView) findViewById(R.id.activityfourthTextView1);
 		activityfourthLinearLayout2 = (LinearLayout) findViewById(R.id.activityfourthLinearLayout2);
 		btn_set_bg2.setText("点击切换背景");
 		btn1.setText("禁用EditText1");
 		btn2.setText("禁用EditText2");
 		btn1w.setText("禁用EditText1");
 		btn2w.setText("禁用EditText2");
-		activityfourthTextView1.setVisibility(View.GONE);
 		title_bar_btn_left.setOnClickListener(new OnClickListener ()
 			{
 				@Override
@@ -117,16 +115,8 @@ public class FourthActivity extends Activity
 			{
 				@Override
 				public void onClick(View v){
-					
-					if(activityfourthTextView1.getVisibility() == View.GONE){
-						activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_107);
-						activityfourthTextView1.setVisibility(View.VISIBLE);
-					}else{
-						activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_006);
-						activityfourthTextView1.setVisibility(View.GONE);
-
-					}
-				}	
+					switchBackground();
+				}
 			});
 	}
 	
@@ -145,4 +135,14 @@ public class FourthActivity extends Activity
 				}
 			});
     }
+	public void switchBackground()
+	{
+		if(background == true){
+			activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_006);
+			background = false;
+		}else{
+			activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_107);
+			background = true;
+		}
+	}
 }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="80dp"
+	android:orientation="horizontal"
+	android:background="@drawable/appui_title_bg">
+
+	<Button
+		android:layout_height="match_parent"
+		android:layout_width="70dp"
+		android:background="#00000000"
+		android:drawable="@drawable/ic_round_btn"
+		style="@style/textview_text_style_dark"/>
+
+	<TextView
+		android:layout_height="match_parent"
+		android:text="Text"
+		android:layout_width="wrap_content"
+		android:layout_weight="1.0"
+		android:gravity="center"
+		style="@style/textview_title_style_dark"/>
+
+	<LinearLayout
+		android:layout_width="70dp"
+		android:layout_height="70dp"
+		android:orientation="vertical"
+		android:layout_gravity="center">
+
+		<ImageButton
+			android:id="@+id/btnOT"
+			android:drawable="@drawable/ic_round_btn"
+			android:layout_gravity="center"
+			style="@style/button_round_style"/>
+
+		<TextView
+			android:gravity="center"
+			android:text="文字Text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:layout_gravity="center"
+			android:textColor="#555555"
+			android:singleLine="true"
+			android:textSize="15dp"/>
+
+	</LinearLayout>
+<!--
+	<Button
+		android:id="@+id/btn"
+		android:text="文"
+		android:layout_gravity="center"
+		android:drawableTop="@drawable/ic_round_btn"
+		style="@style/button_round_style"/>
+-->
+</LinearLayout>
+

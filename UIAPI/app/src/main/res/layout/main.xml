@@ -9,6 +9,13 @@
 	<include
 		layout="@layout/title_bar"/>
 
+	<Button
+		android:text="Application UI"
+		android:layout_width="match_parent"
+		style="@style/button_center_one_style"
+		android:layout_margin="10dp"
+		android:id="@+id/show_appui_btn"/>
+
 	<ListView
 		android:id="@+id/list_view"
 		android:layout_width="match_parent"
