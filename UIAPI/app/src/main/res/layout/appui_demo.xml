@@ -9,7 +9,10 @@
 	<include
 		layout="@layout/appui_title"/>
 
-	
+	<ListView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/appuidemoListView1"/>
 
 </LinearLayout>
 

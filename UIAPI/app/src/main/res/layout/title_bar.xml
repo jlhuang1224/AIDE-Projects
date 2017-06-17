@@ -34,7 +34,7 @@
 		android:id="@+id/title_bar_btn_right"
 		android:paddingLeft="5dp"
 		android:layout_gravity="center|end"
-		android:text="v1.0.25alpha"/>
+		android:text="v1.0.28alpha"/>
 
 </LinearLayout>
 

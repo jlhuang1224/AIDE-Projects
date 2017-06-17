@@ -14,11 +14,12 @@ public class MainActivity extends Activity
 	private Button show_appui_btn;
 	private String[] data = { "TextView", "Button", "EditText", "CheckBox",
 		"RadioButton", "ProgressBar(round)", "ProgressBar", "SeekBar", "Switch", "Dialog" };
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
@@ -32,7 +33,7 @@ public class MainActivity extends Activity
 			public void onClick(View v)
 			{
 				Intent i = new Intent(MainActivity.this,
-									  AppUiDemoActivity.class);
+									AppUiDemoActivity.class);
 				startActivity(i);
 			}
 		});
@@ -45,32 +46,32 @@ public class MainActivity extends Activity
 		listView.setOnItemClickListener(new OnItemClickListener() {
 				@Override
 				public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-										long arg3) {
+						long arg3) {
 					if(arg2==0){
 						Intent i = new Intent(MainActivity.this,
 						SecondActivity.class);
 						startActivity(i);
-						}else{
+					}else{
 						if(arg2==1){
 							Intent i = new Intent(MainActivity.this,
 							ThirdActivity.class);
 							startActivity(i);
-							}else{
-								if(arg2==2){
-									Intent i = new Intent(MainActivity.this,
-									FourthActivity.class);
-									startActivity(i);
-								}else{
-									if(arg2==3){
-										Intent i = new Intent(MainActivity.this,
-										FifthActivity.class);
-										startActivity(i);
-								}
+					}else{
+						if(arg2==2){
+							Intent i = new Intent(MainActivity.this,
+							FourthActivity.class);
+							startActivity(i);
+					}else{
+						if(arg2==3){
+							Intent i = new Intent(MainActivity.this,
+							FifthActivity.class);
+							startActivity(i);
 							}
 						}
-					}		
+					}
 				}
-			});
+			}
+		});
 	}
 }
 

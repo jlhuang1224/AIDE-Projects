@@ -8,8 +8,8 @@ android {
         applicationId "com.jlhuang.uiapi"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 10250
-        versionName "1.0.25alpha"
+        versionCode 10280
+        versionName "1.0.28alpha"
     }
     buildTypes {
         release {
@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-
+	
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

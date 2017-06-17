@@ -138,10 +138,10 @@ public class FourthActivity extends Activity
 	public void switchBackground()
 	{
 		if(background == true){
-			activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_006);
+			activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_107);
 			background = false;
 		}else{
-			activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_107);
+			activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_006);
 			background = true;
 		}
 	}

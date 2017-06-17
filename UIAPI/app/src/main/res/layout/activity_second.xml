@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:background="#999999"
-	android:orientation="vertical">
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content">
 
-	<include
-		layout="@layout/title_bar"/>
-	
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/textview_text_title_dark"
-		style="@style/textview_title_style_dark"/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#999999"
+		android:orientation="vertical">
 
-	<TextView
-		android:layout_width="fill_parent"
-		android:layout_height="50dp"
-		android:background="#333333"/>
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/textview_text_text_dark"
-		style="@style/textview_text_style_dark"/>
+		<include
+			layout="@layout/title_bar"/>
 
-	<TextView
-		android:layout_width="fill_parent"
-		android:layout_height="50dp"
-		android:background="#555555"/>
-	
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/textview_text_title_light"
-		style="@style/textview_title_style_light"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/textview_text_title_dark"
+			style="@style/textview_title_style_dark"/>
 
-	<TextView
-		android:layout_width="fill_parent"
-		android:layout_height="50dp"
-		android:background="#f0f0f0"/>
-		
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/textview_text_text_light"
-		style="@style/textview_text_style_light"/>
-	<TextView
-		android:layout_width="fill_parent"
-		android:layout_height="50dp"
-		android:background="#e0e0e0"/>
-		
-</LinearLayout>
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:background="#333333"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/textview_text_text_dark"
+			style="@style/textview_text_style_dark"/>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:background="#555555"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/textview_text_title_light"
+			style="@style/textview_title_style_light"/>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:background="#f0f0f0"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/textview_text_text_light"
+			style="@style/textview_text_style_light"/>
+
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:background="#e0e0e0"/>
+
+	</LinearLayout>
+
+</ScrollView>
 

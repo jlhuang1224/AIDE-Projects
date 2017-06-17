@@ -29,7 +29,7 @@
 
 		<ImageButton
 			android:id="@+id/btnOT"
-			android:drawable="@drawable/ic_round_btn"
+			android:src="@drawable/ic_round_btn"
 			android:layout_gravity="center"
 			style="@style/button_round_style"/>
 
