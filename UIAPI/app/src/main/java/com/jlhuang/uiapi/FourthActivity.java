@@ -27,7 +27,8 @@ public class FourthActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourth);
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+		{
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
 		SetAppTitle();
@@ -36,47 +37,56 @@ public class FourthActivity extends Activity
 		et1w = (EditText)findViewById(R.id.et1w);
 		et2w = (EditText)findViewById(R.id.et2w);
 		btn1 = (Button)findViewById(R.id.btn1);
-		btn2 =(Button)findViewById(R.id.btn2);
+		btn2 = (Button)findViewById(R.id.btn2);
 		btn1w = (Button)findViewById(R.id.btn1w);
-		btn2w =(Button)findViewById(R.id.btn2w);
-		btn_set_bg2 =(Button)findViewById(R.id.btn_set_bg2);
+		btn2w = (Button)findViewById(R.id.btn2w);
+		btn_set_bg2 = (Button)findViewById(R.id.btn_set_bg2);
 		activityfourthLinearLayout2 = (LinearLayout) findViewById(R.id.activityfourthLinearLayout2);
 		btn_set_bg2.setText("点击切换背景");
 		btn1.setText("禁用EditText1");
 		btn2.setText("禁用EditText2");
 		btn1w.setText("禁用EditText1");
 		btn2w.setText("禁用EditText2");
-		title_bar_btn_left.setOnClickListener(new OnClickListener ()
+		title_bar_btn_left.setOnClickListener(new OnClickListener()
 			{
 				@Override
-				public void onClick(View v){
+				public void onClick(View v)
+				{
 					finish();
 				}
 			});
 		btn1.setOnClickListener(new OnClickListener()
-		{
-			@Override
-			public void onClick(View v){
-				if(et1.isEnabled()){
-					btn1.setText("启用EditText1");
-					et1.setEnabled(false);
-				} else {
-					btn1.setText("禁用EditText1");
-					et1.setEnabled(true);
+			{
+				@Override
+				public void onClick(View v)
+				{
+					if (et1.isEnabled())
+					{
+						btn1.setText("启用EditText1");
+						et1.setEnabled(false);
+					}
+					else
+					{
+						btn1.setText("禁用EditText1");
+						et1.setEnabled(true);
+					}
+					/*	Intent i = null;
+					 i = new Intent(AudioService.ACTION_REMOTE_PLAY);
+					 */
 				}
-			/*	Intent i = null;
-				i = new Intent(AudioService.ACTION_REMOTE_PLAY);
-*/
-			}
-		});
+			});
 		btn1w.setOnClickListener(new OnClickListener()
 			{
 				@Override
-				public void onClick(View v){
-					if(et1w.isEnabled()){
+				public void onClick(View v)
+				{
+					if (et1w.isEnabled())
+					{
 						btn1w.setText("启用EditText1");
 						et1w.setEnabled(false);
-					} else {
+					}
+					else
+					{
 						btn1w.setText("禁用EditText1");
 						et1w.setEnabled(true);
 					}
@@ -86,25 +96,33 @@ public class FourthActivity extends Activity
 				}
 			});
 		btn2.setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v){
-				if(et2.isEnabled()){
-					et2.setEnabled(false);
-					btn2.setText("启用EditText2");
-				} else {
-					et2.setEnabled(true);
-					btn2.setText("禁用EditText2");
+				@Override
+				public void onClick(View v)
+				{
+					if (et2.isEnabled())
+					{
+						et2.setEnabled(false);
+						btn2.setText("启用EditText2");
+					}
+					else
+					{
+						et2.setEnabled(true);
+						btn2.setText("禁用EditText2");
+					}
+
 				}
-				
-			}
-		});
+			});
 		btn2w.setOnClickListener(new OnClickListener(){
 				@Override
-				public void onClick(View v){
-					if(et2w.isEnabled()){
+				public void onClick(View v)
+				{
+					if (et2w.isEnabled())
+					{
 						et2w.setEnabled(false);
 						btn2w.setText("启用EditText2");
-					} else {
+					}
+					else
+					{
 						et2w.setEnabled(true);
 						btn2w.setText("禁用EditText2");
 					}
@@ -114,12 +132,13 @@ public class FourthActivity extends Activity
 		btn_set_bg2.setOnClickListener(new OnClickListener()
 			{
 				@Override
-				public void onClick(View v){
+				public void onClick(View v)
+				{
 					switchBackground();
 				}
 			});
 	}
-	
+
 	private void SetAppTitle()
 	{
 		// TODO: Implement this method
@@ -127,20 +146,24 @@ public class FourthActivity extends Activity
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
 		title_bar_btn_left.setText("↩返回");
 		title_bar_title.setText("EditText");
-		title_bar_btn_left.setOnClickListener(new OnClickListener ()
+		title_bar_btn_left.setOnClickListener(new OnClickListener()
 			{
 				@Override
-				public void onClick(View v){
+				public void onClick(View v)
+				{
 					finish();
 				}
 			});
     }
 	public void switchBackground()
 	{
-		if(background == true){
+		if (background == true)
+		{
 			activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_107);
 			background = false;
-		}else{
+		}
+		else
+		{
 			activityfourthLinearLayout2.setBackgroundResource(R.drawable.lockscreen_006);
 			background = true;
 		}

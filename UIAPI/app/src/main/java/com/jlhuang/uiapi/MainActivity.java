@@ -20,23 +20,24 @@ public class MainActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+		{
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
 		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
 		show_appui_btn = (Button)findViewById(R.id.show_appui_btn);
 		show_appui_btn.setOnClickListener(new OnClickListener()
-		{
-			@Override
-			
-			public void onClick(View v)
 			{
-				Intent i = new Intent(MainActivity.this,
-									AppUiDemoActivity.class);
-				startActivity(i);
-			}
-		});
+				@Override
+
+				public void onClick(View v)
+				{
+					Intent i = new Intent(MainActivity.this,
+										  AppUiDemoActivity.class);
+					startActivity(i);
+				}
+			});
 		title_bar_btn_left.setText("");
 		title_bar_title.setText("UI API");
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
@@ -46,32 +47,43 @@ public class MainActivity extends Activity
 		listView.setOnItemClickListener(new OnItemClickListener() {
 				@Override
 				public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
-						long arg3) {
-					if(arg2==0){
+										long arg3)
+				{
+					if (arg2 == 0)
+					{
 						Intent i = new Intent(MainActivity.this,
-						SecondActivity.class);
+											  SecondActivity.class);
 						startActivity(i);
-					}else{
-						if(arg2==1){
+					}
+					else
+					{
+						if (arg2 == 1)
+						{
 							Intent i = new Intent(MainActivity.this,
-							ThirdActivity.class);
+												  ThirdActivity.class);
 							startActivity(i);
-					}else{
-						if(arg2==2){
-							Intent i = new Intent(MainActivity.this,
-							FourthActivity.class);
-							startActivity(i);
-					}else{
-						if(arg2==3){
-							Intent i = new Intent(MainActivity.this,
-							FifthActivity.class);
-							startActivity(i);
+						}
+						else
+						{
+							if (arg2 == 2)
+							{
+								Intent i = new Intent(MainActivity.this,
+													  FourthActivity.class);
+								startActivity(i);
+							}
+							else
+							{
+								if (arg2 == 3)
+								{
+									Intent i = new Intent(MainActivity.this,
+														  FifthActivity.class);
+									startActivity(i);
+								}
 							}
 						}
 					}
 				}
-			}
-		});
+			});
 	}
 }
 

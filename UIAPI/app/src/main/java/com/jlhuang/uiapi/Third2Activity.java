@@ -53,56 +53,65 @@ public class Third2Activity extends Activity
 		title_bar_btn_left.setTextColor(Color.parseColor("#ddf0f0f0"));
 		title_bar_title.setText("Button");
 		title_bar_title.setTextColor(Color.parseColor("#ddf0f0f0"));
-		title_bar_btn_left.setOnClickListener(new OnClickListener ()
-		{
-			@Override
-			public void onClick(View v){
-				finish();
-			}
-		});
-		btnDAw.setOnClickListener(new OnClickListener()
-		{
-			@Override
-			public void onClick(View v){
-				if(btnLw.isEnabled()){
-					btnLw.setEnabled(false);
-					btnCw.setEnabled(false);
-					btnRw.setEnabled(false);
-					btnL2w.setEnabled(false);
-					btnR2w.setEnabled(false);
-					btnCOw.setEnabled(false);
-					btnOw.setEnabled(false);
-					btnOTw.setEnabled(false);
-					btnDAw.setText("启用全部按钮");
-				}else{
-					btnLw.setEnabled(true);
-					btnCw.setEnabled(true);
-					btnRw.setEnabled(true);
-					btnL2w.setEnabled(true);
-					btnR2w.setEnabled(true);
-					btnCOw.setEnabled(true);
-					btnOw.setEnabled(true);
-					btnOTw.setEnabled(true);
-					btnDAw.setText("禁用全部按钮");
+		title_bar_btn_left.setOnClickListener(new OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					finish();
 				}
-			}
-		});
-			
+			});
+		btnDAw.setOnClickListener(new OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					if (btnLw.isEnabled())
+					{
+						btnLw.setEnabled(false);
+						btnCw.setEnabled(false);
+						btnRw.setEnabled(false);
+						btnL2w.setEnabled(false);
+						btnR2w.setEnabled(false);
+						btnCOw.setEnabled(false);
+						btnOw.setEnabled(false);
+						btnOTw.setEnabled(false);
+						btnDAw.setText("启用全部按钮");
+					}
+					else
+					{
+						btnLw.setEnabled(true);
+						btnCw.setEnabled(true);
+						btnRw.setEnabled(true);
+						btnL2w.setEnabled(true);
+						btnR2w.setEnabled(true);
+						btnCOw.setEnabled(true);
+						btnOw.setEnabled(true);
+						btnOTw.setEnabled(true);
+						btnDAw.setText("禁用全部按钮");
+					}
+				}
+			});
+
 		btn_set_bg.setOnClickListener(new OnClickListener()
-		{
-				
-			@Override
-			public void onClick(View v){
-				switchBackground();
-			}	
-		});
+			{
+
+				@Override
+				public void onClick(View v)
+				{
+					switchBackground();
+				}	
+			});
 	}
 	public void switchBackground()
 	{
-		if(background == true){
+		if (background == true)
+		{
 			activity_third2_ScrollView.setBackgroundResource(R.drawable.lockscreen_006);
 			background = false;
-		}else{
+		}
+		else
+		{
 			activity_third2_ScrollView.setBackgroundResource(R.drawable.lockscreen_107);
 			background = true;
 		}

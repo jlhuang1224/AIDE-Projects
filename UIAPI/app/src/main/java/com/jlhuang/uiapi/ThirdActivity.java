@@ -27,7 +27,8 @@ public class ThirdActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+		{
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
 		btnR = (Button)findViewById(R.id.btnR);
@@ -45,18 +46,21 @@ public class ThirdActivity extends Activity
 		title_bar_btn_left.setText("↩返回");
 		title_bar_title.setText("Button");
 		btnDA.setText("禁用全部按钮");
-		title_bar_btn_left.setOnClickListener(new OnClickListener ()
+		title_bar_btn_left.setOnClickListener(new OnClickListener()
 			{
 				@Override
-				public void onClick(View v){
+				public void onClick(View v)
+				{
 					finish();
 				}
 			});
 		btnDA.setOnClickListener(new OnClickListener()
 			{
 				@Override
-				public void onClick(View v){
-					if(btnL.isEnabled()){
+				public void onClick(View v)
+				{
+					if (btnL.isEnabled())
+					{
 						btnL.setEnabled(false);
 						btnC.setEnabled(false);
 						btnR.setEnabled(false);
@@ -66,7 +70,9 @@ public class ThirdActivity extends Activity
 						btnO.setEnabled(false);
 						btnOT.setEnabled(false);
 						btnDA.setText("启用全部按钮");
-					}else{
+					}
+					else
+					{
 						btnL.setEnabled(true);
 						btnC.setEnabled(true);
 						btnR.setEnabled(true);
@@ -82,10 +88,11 @@ public class ThirdActivity extends Activity
 		btnJP.setOnClickListener(new OnClickListener()
 			{
 				@Override
-				public void onClick(View v){
-					Intent i = new Intent(ThirdActivity.this,Third2Activity.class);
+				public void onClick(View v)
+				{
+					Intent i = new Intent(ThirdActivity.this, Third2Activity.class);
 					startActivity(i);
-			}
-		});
+				}
+			});
 	}
 }

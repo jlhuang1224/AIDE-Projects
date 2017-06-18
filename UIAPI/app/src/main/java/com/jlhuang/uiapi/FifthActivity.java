@@ -16,7 +16,8 @@ public class FifthActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fifth);
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+		{
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
 		SetAppTitle();
@@ -29,10 +30,11 @@ public class FifthActivity extends Activity
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
 		title_bar_btn_left.setText("↩返回");
 		title_bar_title.setText("CheckBox");
-		title_bar_btn_left.setOnClickListener(new OnClickListener ()
+		title_bar_btn_left.setOnClickListener(new OnClickListener()
 			{
 				@Override
-				public void onClick(View v){
+				public void onClick(View v)
+				{
 					finish();
 				}
 			});
