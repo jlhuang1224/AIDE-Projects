@@ -4,6 +4,8 @@
 	android:layout_width="match_parent"
 	android:layout_height="80dp"
 	android:orientation="horizontal"
+	android:fitsSystemWindows="true"
+	android:clipToPadding="true"
 	android:background="@drawable/appui_title_bg">
 
 	<Button
@@ -11,11 +13,12 @@
 		android:layout_width="70dp"
 		android:background="#00000000"
 		android:drawable="@drawable/ic_round_btn"
-		style="@style/textview_text_style_dark"/>
+		style="@style/textview_text_style_dark"
+		android:text="&lt; Back "
+		android:id="@+id/appuiTitleBack"/>
 
 	<TextView
 		android:layout_height="match_parent"
-		android:text="Text"
 		android:layout_width="wrap_content"
 		android:layout_weight="1.0"
 		android:gravity="center"

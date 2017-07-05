@@ -15,12 +15,22 @@ public class AppUiDemoActivity extends Activity
 		"Potato", "Pear", "Icecream", "Lollipop", "Egg", "Milk", "Beef", "Coffee", 
 		"Watermelon", "Orange", "Tea", "Juice", "Cake", "Salad" ,"Marshmallow", 
 		"Grape", "Rice", "Fish"};
+	private Button appuiTitleBack;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.appui_demo);
+		appuiTitleBack = (Button)findViewById(R.id.appuiTitleBack);
+		appuiTitleBack.setOnClickListener(new OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					finish();
+				}
+			});
 		ArrayAdapter<String> AppUiAdapter = new ArrayAdapter<String>(
 			AppUiDemoActivity.this, android.R.layout.simple_list_item_1, AppUiData);
 		ListView AppUiListview = (ListView) findViewById(R.id.appuidemoListView1);

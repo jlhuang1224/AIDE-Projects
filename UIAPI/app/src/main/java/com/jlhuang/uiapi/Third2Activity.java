@@ -48,11 +48,11 @@ public class Third2Activity extends Activity
 		activity_third2_ScrollView = (ScrollView)findViewById(R.id.activity_third2_ScrollView);
 		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
-		title_bar_btn_left.setText("↩返回");
+		title_bar_btn_left.setText("< Back");
 		btnDAw.setText("禁用全部按钮");
-		title_bar_btn_left.setTextColor(Color.parseColor("#ddf0f0f0"));
+//		title_bar_btn_left.setTextColor(Color.parseColor("#ddf0f0f0"));
 		title_bar_title.setText("Button");
-		title_bar_title.setTextColor(Color.parseColor("#ddf0f0f0"));
+//		title_bar_title.setTextColor(Color.parseColor("#ddf0f0f0"));
 		title_bar_btn_left.setOnClickListener(new OnClickListener()
 			{
 				@Override

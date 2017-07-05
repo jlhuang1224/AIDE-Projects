@@ -3,6 +3,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_height="match_parent"
 	android:layout_width="match_parent"
+	android:background="#F0F0F0"
 	android:orientation="vertical">
 
 	<include
@@ -15,7 +16,6 @@
 		<LinearLayout
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
-			android:background="#fefefe"
 			android:orientation="vertical">
 
 			<EditText
