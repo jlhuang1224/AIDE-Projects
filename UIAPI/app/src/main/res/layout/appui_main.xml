@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#F0F0F0">
+
+	<include
+		layout="@layout/appui_title"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="@string/appui_main_introduction"
+		android:layout_width="wrap_content"
+		style="@style/textview_text_style_dark"/>
+
+	<ListView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/appuidemoListView1"/>
+
+</LinearLayout>
+

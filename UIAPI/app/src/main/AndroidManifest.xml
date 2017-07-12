@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
 		<activity
-            android:name=".AppUiDemoActivity"/>
+            android:name=".AppUiMainActivity"/>
+		<activity
+			android:name=".AppUiSecondActivity"/>
 		<activity
             android:name=".SecondActivity"/>
 		<activity

@@ -34,7 +34,7 @@ public class MainActivity extends Activity
 				public void onClick(View v)
 				{
 					Intent i = new Intent(MainActivity.this,
-										  AppUiDemoActivity.class);
+										  AppUiMainActivity.class);
 					startActivity(i);
 				}
 			});
