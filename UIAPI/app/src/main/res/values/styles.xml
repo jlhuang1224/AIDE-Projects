@@ -82,9 +82,9 @@
 		<item name="android:padding">5dp</item>
 		<item name="android:background">@drawable/edittext_shape_selector_translucent</item>
 	</style>
-	<style name="appui_main_title_button_left_style">
-		<item name="android:layout_height">match_parent</item>
-		<item name="android:layout_width">70dp</item>
+	<style name="appui_title_button_back_style">
+		<item name="android:layout_height">70dp</item>
+		<item name="android:layout_width">wrap_content</item>
 		<item name="android:background">#00000000</item>
 		<item name="android:padding">3dp</item>
 		<item name="android:textColor">#555555</item>

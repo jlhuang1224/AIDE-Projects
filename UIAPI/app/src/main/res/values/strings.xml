@@ -6,6 +6,6 @@
 	<string name="textview_text_text_dark">内容文本：灰</string>
 	<string name="textview_text_title_light">标题文本：白</string>
 	<string name="textview_text_text_light">内容文本：灰白</string>
-	<string name="appui_main_introduction">你现在看到的是我们UI的主界面的范本。可以看到，它是由带操作按钮标题栏、一段文字和一个ListView组成的。这个界面通常是设置等一些常规的应用的主界面，标题是居中的，而且不带有返回按钮，但是可以带有操作按钮。点击下面任意项目即可跳转至二级界面。</string>
-	<string name="appui_second_introduction">你现在看到的是我们UI的二级界面的范本。它也是由带操作按钮标题栏、一段文字组成的。这个界面通常是一些的应用的二级界面，比如说音乐的搜索结果的页面。标题是居左的，并带有返回按钮，在标题的左侧。返回按钮的文字要在Java另行设置，同样可以有操作按钮。</string>
+	<string name="appui_main_introduction">你现在看到的是我们UI的主界面的范本。可以看到，它是由带有两个操作按钮（一个有图片一个没有）的标题栏、一段文字和一个列表组成的。标题居中的，不带有返回按钮，但是带有操作按钮。这个标题栏的操作按钮最多四个（以后看情况决定是否添加），从右到左排列，默认在布局XML里面隐藏（Invisible），通过调用setVisibility来显示需要的按钮。按钮的图片和文字要另行设置。这个界面通常是设置等一些常规的应用的主界面。点击下面任意项目即可跳转至二级界面。</string>
+	<string name="appui_second_introduction">你现在看到的是我们UI的二级界面的范本。它也是由带有四个（最多四个）操作按钮标题栏、一段文字组成的。标题是居左的，并带有返回按钮，在标题的左侧。返回按钮的文字要在Java另行设置。这个界面通常是一些的应用的二级界面，比如说音乐的搜索结果的页面。</string>
 </resources>
