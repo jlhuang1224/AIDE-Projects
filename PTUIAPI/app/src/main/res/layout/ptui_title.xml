@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="80dp"
+	android:orientation="horizontal"
+	android:fitsSystemWindows="true"
+	android:clipToPadding="true"
+	android:background="@drawable/ptui_title_bg">
+
+	<LinearLayout
+		android:layout_height="70dp"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal"
+		android:layout_centerInParent="true"
+		android:layout_alignParentLeft="true">
+
+		<Button
+			style="@style/ptui_title_button_back_style"
+			android:id="@+id/ptuiTitleBack"
+			android:text="&lt;Back"
+			android:textSize="25sp"
+			android:visibility="invisible"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:layout_weight="1.0"
+		android:gravity="center"
+		android:layout_centerInParent="true"
+		style="@style/textview_title_style_dark"
+		android:id="@+id/appuiTitleTextView"
+		android:textSize="25sp"/>
+
+	<LinearLayout
+		android:layout_width="70dp"
+		android:layout_height="70dp"
+		android:orientation="vertical"
+		android:layout_gravity="center"
+		android:layout_alignParentRight="true"
+		android:id="@+id/appuiTitleRightBtnFrame1"
+		android:layout_centerInParent="true"
+		android:visibility="invisible">
+
+		<ImageButton
+			android:layout_gravity="center"
+			style="@style/button_round_style"
+			android:id="@+id/appuiTitleRightBtn1"/>
+
+		<TextView
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:layout_gravity="center"
+			android:textColor="#555555"
+			android:singleLine="true"
+			android:textSize="15dp"
+			android:id="@+id/appuiTitleRightBtnText1"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="70dp"
+		android:layout_height="70dp"
+		android:orientation="vertical"
+		android:layout_gravity="center"
+		android:id="@+id/appuiTitleRightBtnFrame2"
+		android:layout_toLeftOf="@id/appuiTitleRightBtnFrame1"
+		android:layout_centerInParent="true"
+		android:visibility="invisible">
+
+		<ImageButton
+			android:layout_gravity="center"
+			style="@style/button_round_style"
+			android:id="@+id/appuiTitleRightBtn2"/>
+
+		<TextView
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:layout_gravity="center"
+			android:textColor="#555555"
+			android:singleLine="true"
+			android:textSize="15dp"
+			android:id="@+id/appuiTitleRightBtnText2"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="70dp"
+		android:layout_height="70dp"
+		android:orientation="vertical"
+		android:id="@+id/appuiTitleRightBtnFrame3"
+		android:layout_toLeftOf="@id/appuiTitleRightBtnFrame2"
+		android:layout_centerInParent="true"
+		android:visibility="invisible">
+
+		<ImageButton
+			android:layout_gravity="center"
+			style="@style/button_round_style"
+			android:id="@+id/appuiTitleRightBtn3"/>
+
+		<TextView
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:layout_gravity="center"
+			android:textColor="#555555"
+			android:singleLine="true"
+			android:textSize="15dp"
+			android:id="@+id/appuiTitleRightBtnText3"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="70dp"
+		android:layout_height="70dp"
+		android:orientation="vertical"
+		android:id="@+id/appuiTitleRightBtnFrame4"
+		android:layout_toLeftOf="@id/appuiTitleRightBtnFrame3"
+		android:layout_centerInParent="true"
+		android:visibility="invisible">
+
+		<ImageButton
+			android:layout_gravity="center"
+			style="@style/button_round_style"
+			android:id="@+id/appuiTitleRightBtn4"/>
+
+		<TextView
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:layout_gravity="center"
+			android:textColor="#555555"
+			android:singleLine="true"
+			android:textSize="15dp"
+			android:id="@+id/appuiTitleRightBtnText4"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="80dp"
+	android:layout_width="match_parent"
+	android:orientation="horizontal"
+	android:fitsSystemWindows="true"  
+	android:clipToPadding="true"
+	android:background="@drawable/ptui_title_bg">
+
+	<Button
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:background="#00000000"
+		android:textColor="#555555"
+		android:id="@+id/title_bar_btn_left"
+		android:paddingLeft="5dp"/>
+
+	<TextView
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:gravity="center"
+		android:layout_marginLeft="10dp"
+		style="@style/textview_title_style_dark"
+		android:id="@+id/title_bar_title"
+		android:layout_weight="1.0"
+		android:layout_marginRight="10dp"/>
+
+	<Button
+		android:layout_height="match_parent"
+		android:layout_width="wrap_content"
+		android:background="#00000000"
+		android:textColor="#555555"
+		android:id="@+id/title_bar_btn_right"
+		android:paddingLeft="5dp"
+		android:layout_gravity="center|end"
+		android:text="v1.0.54beta"/>
+
+</LinearLayout>
+

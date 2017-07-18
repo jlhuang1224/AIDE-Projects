@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.0"
+
+    defaultConfig {
+        applicationId "com.jlhuang.ptuiapi"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 170718
+        versionName "1.0.69alpha"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+	
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
