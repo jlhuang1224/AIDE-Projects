@@ -31,7 +31,7 @@
 		android:gravity="center"
 		android:layout_centerInParent="true"
 		style="@style/textview_title_style_dark"
-		android:id="@+id/appuiTitleTextView"
+		android:id="@+id/ptuiTitleTextView"
 		android:textSize="25sp"/>
 
 	<LinearLayout
@@ -40,14 +40,14 @@
 		android:orientation="vertical"
 		android:layout_gravity="center"
 		android:layout_alignParentRight="true"
-		android:id="@+id/appuiTitleRightBtnFrame1"
+		android:id="@+id/ptuiTitleRightBtnFrame1"
 		android:layout_centerInParent="true"
 		android:visibility="invisible">
 
 		<ImageButton
 			android:layout_gravity="center"
 			style="@style/button_round_style"
-			android:id="@+id/appuiTitleRightBtn1"/>
+			android:id="@+id/ptuiTitleRightBtn1"/>
 
 		<TextView
 			android:gravity="center"
@@ -58,7 +58,7 @@
 			android:textColor="#555555"
 			android:singleLine="true"
 			android:textSize="15dp"
-			android:id="@+id/appuiTitleRightBtnText1"/>
+			android:id="@+id/ptuiTitleRightBtnText1"/>
 
 	</LinearLayout>
 
@@ -67,15 +67,15 @@
 		android:layout_height="70dp"
 		android:orientation="vertical"
 		android:layout_gravity="center"
-		android:id="@+id/appuiTitleRightBtnFrame2"
-		android:layout_toLeftOf="@id/appuiTitleRightBtnFrame1"
+		android:id="@+id/ptuiTitleRightBtnFrame2"
+		android:layout_toLeftOf="@id/ptuiTitleRightBtnFrame1"
 		android:layout_centerInParent="true"
 		android:visibility="invisible">
 
 		<ImageButton
 			android:layout_gravity="center"
 			style="@style/button_round_style"
-			android:id="@+id/appuiTitleRightBtn2"/>
+			android:id="@+id/ptuiTitleRightBtn2"/>
 
 		<TextView
 			android:gravity="center"
@@ -86,7 +86,7 @@
 			android:textColor="#555555"
 			android:singleLine="true"
 			android:textSize="15dp"
-			android:id="@+id/appuiTitleRightBtnText2"/>
+			android:id="@+id/ptuiTitleRightBtnText2"/>
 
 	</LinearLayout>
 
@@ -94,15 +94,15 @@
 		android:layout_width="70dp"
 		android:layout_height="70dp"
 		android:orientation="vertical"
-		android:id="@+id/appuiTitleRightBtnFrame3"
-		android:layout_toLeftOf="@id/appuiTitleRightBtnFrame2"
+		android:id="@+id/ptuiTitleRightBtnFrame3"
+		android:layout_toLeftOf="@id/ptuiTitleRightBtnFrame2"
 		android:layout_centerInParent="true"
 		android:visibility="invisible">
 
 		<ImageButton
 			android:layout_gravity="center"
 			style="@style/button_round_style"
-			android:id="@+id/appuiTitleRightBtn3"/>
+			android:id="@+id/ptuiTitleRightBtn3"/>
 
 		<TextView
 			android:gravity="center"
@@ -113,7 +113,7 @@
 			android:textColor="#555555"
 			android:singleLine="true"
 			android:textSize="15dp"
-			android:id="@+id/appuiTitleRightBtnText3"/>
+			android:id="@+id/ptuiTitleRightBtnText3"/>
 
 	</LinearLayout>
 
@@ -121,15 +121,15 @@
 		android:layout_width="70dp"
 		android:layout_height="70dp"
 		android:orientation="vertical"
-		android:id="@+id/appuiTitleRightBtnFrame4"
-		android:layout_toLeftOf="@id/appuiTitleRightBtnFrame3"
+		android:id="@+id/ptuiTitleRightBtnFrame4"
+		android:layout_toLeftOf="@id/ptuiTitleRightBtnFrame3"
 		android:layout_centerInParent="true"
 		android:visibility="invisible">
 
 		<ImageButton
 			android:layout_gravity="center"
 			style="@style/button_round_style"
-			android:id="@+id/appuiTitleRightBtn4"/>
+			android:id="@+id/ptuiTitleRightBtn4"/>
 
 		<TextView
 			android:gravity="center"
@@ -140,7 +140,7 @@
 			android:textColor="#555555"
 			android:singleLine="true"
 			android:textSize="15dp"
-			android:id="@+id/appuiTitleRightBtnText4"/>
+			android:id="@+id/ptuiTitleRightBtnText4"/>
 
 	</LinearLayout>
 

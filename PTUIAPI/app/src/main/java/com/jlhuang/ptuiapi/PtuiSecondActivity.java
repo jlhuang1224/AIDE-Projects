@@ -9,29 +9,30 @@ import android.widget.*;
 public class PtuiSecondActivity extends Activity
 {
 
-	private Button appuiTitleBack;
-	private TextView appuiTitleTextView;
-	private TextView appuiTitleRightBtnText1;
-	private TextView appuiTitleRightBtnText2;
-	private TextView appuiTitleRightBtnText3;
-	private TextView appuiTitleRightBtnText4;
-	private ImageButton appuiTitleRightBtn1;
-	private ImageButton appuiTitleRightBtn2;
-	private ImageButton appuiTitleRightBtn3;
-	private ImageButton appuiTitleRightBtn4;
-	private LinearLayout appuiTitleRightBtnFrame1;
-	private LinearLayout appuiTitleRightBtnFrame2;
-	private LinearLayout appuiTitleRightBtnFrame3;
-	private LinearLayout appuiTitleRightBtnFrame4;
+	private Button ptuiTitleBack;
+	private TextView ptuiTitleTextView;
+	private TextView ptuiTitleRightBtnText1;
+	private TextView ptuiTitleRightBtnText2;
+	private TextView ptuiTitleRightBtnText3;
+	private TextView ptuiTitleRightBtnText4;
+	private ImageButton ptuiTitleRightBtn1;
+	private ImageButton ptuiTitleRightBtn2;
+	private ImageButton ptuiTitleRightBtn3;
+	private ImageButton ptuiTitleRightBtn4;
+	private LinearLayout ptuiTitleRightBtnFrame1;
+	private LinearLayout ptuiTitleRightBtnFrame2;
+	private LinearLayout ptuiTitleRightBtnFrame3;
+	private LinearLayout ptuiTitleRightBtnFrame4;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.ptui_second);
-		initAppuiView();
-		appuiTitleBack.setText("<详情");
-		appuiTitleBack.setVisibility(View.VISIBLE);
-		appuiTitleBack.setOnClickListener(new OnClickListener()
+		initPtuiView();
+		ptuiTitleBack.setText("<详情");
+		ptuiTitleBack.setVisibility(View.VISIBLE);
+		ptuiTitleBack.setOnClickListener(new OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
@@ -39,8 +40,8 @@ public class PtuiSecondActivity extends Activity
 				finish();
 			}
 		});
-//		appuiTitleTextView.setText("Details");
-		appuiTitleRightBtn1.setOnClickListener(new OnClickListener()
+//		ptuiTitleTextView.setText("Details");
+		ptuiTitleRightBtn1.setOnClickListener(new OnClickListener()
 			{
 				@Override
 				public void onClick(View v)
@@ -48,7 +49,7 @@ public class PtuiSecondActivity extends Activity
 					Toast.makeText(PtuiSecondActivity.this, "You clicked appuiTitleRightBtn1", Toast.LENGTH_SHORT).show();
 				}
 			});
-		appuiTitleRightBtn2.setOnClickListener(new OnClickListener()
+		ptuiTitleRightBtn2.setOnClickListener(new OnClickListener()
 			{
 				@Override
 				public void onClick(View v)
@@ -56,7 +57,7 @@ public class PtuiSecondActivity extends Activity
 					Toast.makeText(PtuiSecondActivity.this, "You clicked appuiTitleRightBtn2", Toast.LENGTH_SHORT).show();
 				}
 			});
-		appuiTitleRightBtn3.setOnClickListener(new OnClickListener()
+		ptuiTitleRightBtn3.setOnClickListener(new OnClickListener()
 			{
 				@Override
 				public void onClick(View v)
@@ -64,7 +65,7 @@ public class PtuiSecondActivity extends Activity
 					Toast.makeText(PtuiSecondActivity.this, "You clicked appuiTitleRightBtn3", Toast.LENGTH_SHORT).show();
 				}
 			});
-		appuiTitleRightBtn4.setOnClickListener(new OnClickListener()
+		ptuiTitleRightBtn4.setOnClickListener(new OnClickListener()
 			{
 				@Override
 				public void onClick(View v)
@@ -74,41 +75,41 @@ public class PtuiSecondActivity extends Activity
 			});
 	}
 	
-	public void initAppuiView()
+	public void initPtuiView()
 	{
-		appuiTitleBack = (Button)findViewById(R.id.ptuiTitleBack);
-		appuiTitleTextView = (TextView)findViewById(R.id.appuiTitleTextView);
-		appuiTitleRightBtnText1 = (TextView)findViewById(R.id.appuiTitleRightBtnText1);
-		appuiTitleRightBtnText2 = (TextView)findViewById(R.id.appuiTitleRightBtnText2);
-		appuiTitleRightBtnText3 = (TextView)findViewById(R.id.appuiTitleRightBtnText3);
-		appuiTitleRightBtnText4 = (TextView)findViewById(R.id.appuiTitleRightBtnText4);
-		appuiTitleRightBtn1 = (ImageButton)findViewById(R.id.appuiTitleRightBtn1);
-		appuiTitleRightBtn2 = (ImageButton)findViewById(R.id.appuiTitleRightBtn2);
-		appuiTitleRightBtn3 = (ImageButton)findViewById(R.id.appuiTitleRightBtn3);
-		appuiTitleRightBtn4 = (ImageButton)findViewById(R.id.appuiTitleRightBtn4);
-		appuiTitleRightBtnFrame1 = (LinearLayout)findViewById(R.id.appuiTitleRightBtnFrame1);
-		appuiTitleRightBtnFrame2 = (LinearLayout)findViewById(R.id.appuiTitleRightBtnFrame2);
-		appuiTitleRightBtnFrame3 = (LinearLayout)findViewById(R.id.appuiTitleRightBtnFrame3);
-		appuiTitleRightBtnFrame4 = (LinearLayout)findViewById(R.id.appuiTitleRightBtnFrame4);
-		showAppUiTitleRightBtnFrame();
+		ptuiTitleBack = (Button)findViewById(R.id.ptuiTitleBack);
+		ptuiTitleTextView = (TextView)findViewById(R.id.ptuiTitleTextView);
+		ptuiTitleRightBtnText1 = (TextView)findViewById(R.id.ptuiTitleRightBtnText1);
+		ptuiTitleRightBtnText2 = (TextView)findViewById(R.id.ptuiTitleRightBtnText2);
+		ptuiTitleRightBtnText3 = (TextView)findViewById(R.id.ptuiTitleRightBtnText3);
+		ptuiTitleRightBtnText4 = (TextView)findViewById(R.id.ptuiTitleRightBtnText4);
+		ptuiTitleRightBtn1 = (ImageButton)findViewById(R.id.ptuiTitleRightBtn1);
+		ptuiTitleRightBtn2 = (ImageButton)findViewById(R.id.ptuiTitleRightBtn2);
+		ptuiTitleRightBtn3 = (ImageButton)findViewById(R.id.ptuiTitleRightBtn3);
+		ptuiTitleRightBtn4 = (ImageButton)findViewById(R.id.ptuiTitleRightBtn4);
+		ptuiTitleRightBtnFrame1 = (LinearLayout)findViewById(R.id.ptuiTitleRightBtnFrame1);
+		ptuiTitleRightBtnFrame2 = (LinearLayout)findViewById(R.id.ptuiTitleRightBtnFrame2);
+		ptuiTitleRightBtnFrame3 = (LinearLayout)findViewById(R.id.ptuiTitleRightBtnFrame3);
+		ptuiTitleRightBtnFrame4 = (LinearLayout)findViewById(R.id.ptuiTitleRightBtnFrame4);
+		showPtuiTitleRightBtnFrame();
 	}
 
-	public void showAppUiTitleRightBtnFrame()
+	public void showPtuiTitleRightBtnFrame()
 	{
-		appuiTitleRightBtnFrame1.setVisibility(View.VISIBLE);
-		appuiTitleRightBtnText1.setText("删除");
-		appuiTitleRightBtn1.setImageResource(R.drawable.ic_delete_black_24dp);
+		ptuiTitleRightBtnFrame1.setVisibility(View.VISIBLE);
+		ptuiTitleRightBtnText1.setText("删除");
+		ptuiTitleRightBtn1.setImageResource(R.drawable.ic_delete_black_24dp);
 		
-		appuiTitleRightBtnFrame2.setVisibility(View.VISIBLE);
-		appuiTitleRightBtnText2.setText("剪切");
-		appuiTitleRightBtn2.setImageResource(R.drawable.ic_content_cut_black_24dp);
+		ptuiTitleRightBtnFrame2.setVisibility(View.VISIBLE);
+		ptuiTitleRightBtnText2.setText("剪切");
+		ptuiTitleRightBtn2.setImageResource(R.drawable.ic_content_cut_black_24dp);
 		
-		appuiTitleRightBtnFrame3.setVisibility(View.VISIBLE);
-		appuiTitleRightBtnText3.setText("复制");
-		appuiTitleRightBtn3.setImageResource(R.drawable.ic_content_copy_black_24dp);
+		ptuiTitleRightBtnFrame3.setVisibility(View.VISIBLE);
+		ptuiTitleRightBtnText3.setText("复制");
+		ptuiTitleRightBtn3.setImageResource(R.drawable.ic_content_copy_black_24dp);
 		
-		appuiTitleRightBtnFrame4.setVisibility(View.VISIBLE);
-		appuiTitleRightBtnText4.setText("全选");
-		appuiTitleRightBtn4.setImageResource(R.drawable.ic_select_all_black_24dp);
+		ptuiTitleRightBtnFrame4.setVisibility(View.VISIBLE);
+		ptuiTitleRightBtnText4.setText("全选");
+		ptuiTitleRightBtn4.setImageResource(R.drawable.ic_select_all_black_24dp);
 	}
 }
