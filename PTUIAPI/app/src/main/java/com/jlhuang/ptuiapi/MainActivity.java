@@ -39,7 +39,7 @@ public class MainActivity extends Activity
 				}
 			});
 		title_bar_btn_left.setText("");
-		title_bar_title.setText("UI API");
+		title_bar_title.setText("PTUI API");
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
 			MainActivity.this, android.R.layout.simple_list_item_1, data);
 		ListView listView = (ListView) findViewById(R.id.list_view);

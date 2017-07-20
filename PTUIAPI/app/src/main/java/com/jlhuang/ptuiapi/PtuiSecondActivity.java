@@ -96,17 +96,19 @@ public class PtuiSecondActivity extends Activity
 	public void showAppUiTitleRightBtnFrame()
 	{
 		appuiTitleRightBtnFrame1.setVisibility(View.VISIBLE);
-		appuiTitleRightBtnText1.setText("复制");
-		appuiTitleRightBtn1.setImageResource(R.drawable.ic_round_btn);
+		appuiTitleRightBtnText1.setText("删除");
+		appuiTitleRightBtn1.setImageResource(R.drawable.ic_delete_black_24dp);
 		
 		appuiTitleRightBtnFrame2.setVisibility(View.VISIBLE);
-		appuiTitleRightBtnText2.setText("粘贴");
+		appuiTitleRightBtnText2.setText("剪切");
+		appuiTitleRightBtn2.setImageResource(R.drawable.ic_content_cut_black_24dp);
 		
 		appuiTitleRightBtnFrame3.setVisibility(View.VISIBLE);
-		appuiTitleRightBtnText3.setText("全选");
-		appuiTitleRightBtn1.setImageResource(R.drawable.ic_round_btn);
+		appuiTitleRightBtnText3.setText("复制");
+		appuiTitleRightBtn3.setImageResource(R.drawable.ic_content_copy_black_24dp);
 		
 		appuiTitleRightBtnFrame4.setVisibility(View.VISIBLE);
-		appuiTitleRightBtnText4.setText("分享");
+		appuiTitleRightBtnText4.setText("全选");
+		appuiTitleRightBtn4.setImageResource(R.drawable.ic_select_all_black_24dp);
 	}
 }

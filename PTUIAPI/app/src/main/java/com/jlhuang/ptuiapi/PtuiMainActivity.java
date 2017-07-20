@@ -115,7 +115,7 @@ public class PtuiMainActivity extends Activity
 	{
 		appuiTitleRightBtnFrame1.setVisibility(View.VISIBLE);
 		appuiTitleRightBtnText1.setText("Button1");
-		appuiTitleRightBtn1.setImageResource(R.drawable.ic_round_btn);
+		appuiTitleRightBtn1.setImageResource(R.drawable.ic_search_black_24dp);
 		appuiTitleRightBtnFrame2.setVisibility(View.VISIBLE);
 		appuiTitleRightBtnText2.setText("Button2");
 	}
