@@ -7,7 +7,7 @@
 	android:orientation="vertical">
 
 	<include
-		layout="@layout/title_bar"/>
+		layout="@layout/ptui_title"/>
 
 	<ScrollView
 		android:layout_height="match_parent"

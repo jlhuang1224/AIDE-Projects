@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
 	android:orientation="vertical"
 	android:background="@drawable/lockscreen_006"
-	android:id="@+id/activityfifthLinearLayout">
+	android:id="@+id/activitysixthLinearLayout">
 
 	<include
 		layout="@layout/ptui_title"/>
 
 	<ScrollView
 		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:id="@+id/activity_fifth_ScrollView">
+		android:layout_width="match_parent">
 
 		<LinearLayout
-			android:layout_height="match_parent"
+			android:layout_height="wrap_content"
 			android:layout_width="match_parent"
 			android:orientation="vertical">
 
@@ -27,65 +26,74 @@
 				android:background="#F0F0F0"
 				android:padding="20dp">
 
-				<LinearLayout
+				<RadioGroup
 					android:layout_height="wrap_content"
 					android:layout_width="wrap_content"
 					android:orientation="horizontal">
 
-					<CheckBox
-						android:text="CheckBox1"
-						style="@style/checkbox_style"
-						android:id="@+id/activityfifthCheckBox1"/>
+					<RadioButton
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="RadioButton1"
+						android:id="@+id/activitysixthRadioButton1"
+						style="@style/radiobutton_style"/>
 
-					<CheckBox
-						android:text="CheckBox2"
-						style="@style/checkbox_style"
+					<RadioButton
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:text="RadioButton2"
 						android:layout_marginLeft="20dp"
-						android:id="@+id/activityfifthCheckBox2"/>
+						android:id="@+id/activitysixthRadioButton2"
+						style="@style/radiobutton_style"/>
 
-				</LinearLayout>
+				</RadioGroup>
 
 				<LinearLayout
 					android:layout_width="300dp"
 					android:layout_height="wrap_content"
-					android:orientation="horizontal">
+					android:orientation="horizontal"
+					android:layout_marginTop="20dp">
 
 					<Button
 						android:layout_width="150dp"
 						android:textColor="#555555"
 						style="@style/button_left_style"
-						android:id="@+id/activityfifthButton1"
-						android:text="禁用"/>
+						android:text="禁用"
+						android:id="@+id/activitysixthButton1"/>
 
 					<Button
 						android:layout_width="150dp"
 						style="@style/button_right_style"
-						android:id="@+id/activityfifthButton2"
-						android:text="禁用"/>
+						android:text="禁用"
+						android:id="@+id/activitysixthButton2"/>
 
 				</LinearLayout>
 
 			</LinearLayout>
 
-			<LinearLayout
+			<RadioGroup
 				android:layout_height="wrap_content"
 				android:layout_width="wrap_content"
 				android:orientation="horizontal"
 				android:layout_marginLeft="20dp"
-				android:layout_marginTop="50dp">
+				android:layout_marginTop="20dp">
 
-				<CheckBox
-					android:text="CheckBox3"
-					style="@style/checkbox_translucent_style"
-					android:id="@+id/activityfifthCheckBox3"/>
+				<RadioButton
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="RadioButton3"
+					android:id="@+id/activitysixthRadioButton3"
+					style="@style/radiobutton_translucent_style"/>
 
-				<CheckBox
-					android:text="CheckBox4"
-					style="@style/checkbox_translucent_style"
+				<RadioButton
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="RadioButton4"
 					android:layout_marginLeft="20dp"
-					android:id="@+id/activityfifthCheckBox4"/>
+					android:id="@+id/activitysixthRadioButton4"
+					style="@style/radiobutton_translucent_style"/>
 
-			</LinearLayout>
+			</RadioGroup>
 
 			<LinearLayout
 				android:layout_width="300dp"
@@ -97,14 +105,14 @@
 				<Button
 					android:layout_width="150dp"
 					style="@style/button_left_translucent_style"
-					android:id="@+id/activityfifthButton3"
-					android:text="禁用"/>
+					android:text="禁用"
+					android:id="@+id/activitysixthButton3"/>
 
 				<Button
 					android:layout_width="150dp"
 					style="@style/button_right_translucent_style"
-					android:id="@+id/activityfifthButton4"
-					android:text="禁用"/>
+					android:text="禁用"
+					android:id="@+id/activitysixthButton4"/>
 
 			</LinearLayout>
 
@@ -114,7 +122,8 @@
 				android:layout_marginLeft="20dp"
 				style="@style/button_center_one_translucent_style"
 				android:layout_marginTop="20dp"
-				android:id="@+id/activityfifthButton5"/>
+				android:layout_marginBottom="20dp"
+				android:id="@+id/activitysixthButton5"/>
 
 		</LinearLayout>
 

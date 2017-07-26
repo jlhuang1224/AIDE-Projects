@@ -11,9 +11,9 @@ public class MainActivity extends Activity
 {
 	private Button title_bar_btn_left;
 	private TextView title_bar_title;
-	private Button show_appui_btn;
+	private Button view_ptui_btn;
 	private String[] data = { "TextView", "Button", "EditText", "CheckBox",
-		"RadioButton", "ProgressBar(round)", "ProgressBar", "SeekBar", "Switch", "Dialog" };
+		"RadioButton & RadioGroup", "ProgressBar(round)", "ProgressBar", "SeekBar", "Switch", "Dialog" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -26,8 +26,8 @@ public class MainActivity extends Activity
 		}
 		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
 		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
-		show_appui_btn = (Button)findViewById(R.id.show_appui_btn);
-		show_appui_btn.setOnClickListener(new OnClickListener()
+		view_ptui_btn = (Button)findViewById(R.id.view_ptui_btn);
+		view_ptui_btn.setOnClickListener(new OnClickListener()
 			{
 				@Override
 
@@ -79,30 +79,41 @@ public class MainActivity extends Activity
 														  FifthActivity.class);
 									startActivity(i);
 								}
+								else
+								{
+									if (arg2 == 4)
+									{
+										Intent i = new Intent(MainActivity.this,
+															  SixthActivity.class);
+										startActivity(i);
+									}
+								}
 							}
 						}
 					}
 				}
 			});
-		AlertDialog.Builder dialog = new AlertDialog.Builder (MainActivity.this);
+		AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
 		dialog.setTitle("请问");
 		dialog.setMessage("敲一上午的代码，你说累不累？");
-		dialog.setCancelable(false);
+//		dialog.setCancelable(false);
 		dialog.setPositiveButton("累", new DialogInterface. OnClickListener() {
 				@Override
-				public void onClick(DialogInterface dialog, int which) {
+				public void onClick(DialogInterface dialog, int which)
+				{
 					Toast.makeText(MainActivity.this, "谢谢你的理解和支持！开始体验吧，记得做个评价哦！我们UI以后就是这样的啦！", Toast.LENGTH_SHORT).show();
 					dialog.cancel();
 				}
 			});
 		dialog.setNegativeButton("不累", new DialogInterface. OnClickListener() {
 				@Override
-				public void onClick(DialogInterface dialog, int which) {
+				public void onClick(DialogInterface dialog, int which)
+				{
 					Toast.makeText(MainActivity.this, "不累才怪！！谢谢你的支持，开始体验吧，记得做个评价哦！我们UI以后就是这样的啦！", Toast.LENGTH_SHORT).show();
 					dialog.cancel();
 				}
 			});
 //		dialog.show();
-		}
+	}
 }
 

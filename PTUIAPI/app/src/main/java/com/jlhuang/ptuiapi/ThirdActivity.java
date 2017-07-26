@@ -20,8 +20,7 @@ public class ThirdActivity extends Activity
 	private Button btnOT;
 	private Button btnDA;
 	private Button btnJP;
-	private Button title_bar_btn_left;
-	private TextView title_bar_title;
+	private Button ptuiTitleBack;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -31,6 +30,17 @@ public class ThirdActivity extends Activity
 		{
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
+		initPtuiView();
+		ptuiTitleBack.setText("<Button");
+		ptuiTitleBack.setVisibility(View.VISIBLE);
+		ptuiTitleBack.setOnClickListener(new OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					finish();
+				}
+			});
 		btnR = (Button)findViewById(R.id.btnR);
 		btnR2 = (Button)findViewById(R.id.btnR2);
 		btnCO = (Button)findViewById(R.id.btnCO);
@@ -41,19 +51,7 @@ public class ThirdActivity extends Activity
 		btnOT = (Button)findViewById(R.id.btnOT);
 		btnDA = (Button)findViewById(R.id.btnDA);
 		btnJP = (Button)findViewById(R.id.btnJP);
-		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
-		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
-		title_bar_btn_left.setText("< Back");
-		title_bar_title.setText("Button");
 		btnDA.setText("禁用全部按钮");
-		title_bar_btn_left.setOnClickListener(new OnClickListener()
-			{
-				@Override
-				public void onClick(View v)
-				{
-					finish();
-				}
-			});
 		btnDA.setOnClickListener(new OnClickListener()
 			{
 				@Override
@@ -94,5 +92,9 @@ public class ThirdActivity extends Activity
 					startActivity(i);
 				}
 			});
+	}
+	public void initPtuiView()
+	{
+		ptuiTitleBack = (Button)findViewById(R.id.ptuiTitleBack);
 	}
 }

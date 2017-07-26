@@ -21,9 +21,8 @@ public class Third2Activity extends Activity
 	private Button btnOw;
 	private Button btnOTw;
 	private Button btnDAw;
-	private Button title_bar_btn_left;
+	private Button ptuiTitleBack;
 	private Button btn_set_bg;
-	private TextView title_bar_title;
 	private ScrollView activity_third2_ScrollView;
 	private Boolean background = true;
     @Override
@@ -35,6 +34,17 @@ public class Third2Activity extends Activity
 		{
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
+		initPtuiView();
+		ptuiTitleBack.setText("<Button(半透明)");
+		ptuiTitleBack.setVisibility(View.VISIBLE);
+		ptuiTitleBack.setOnClickListener(new OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					finish();
+				}
+			});
 		btnRw = (Button)findViewById(R.id.btnRw);
 		btnR2w = (Button)findViewById(R.id.btnR2w);
 		btnCOw = (Button)findViewById(R.id.btnCOw);
@@ -46,21 +56,7 @@ public class Third2Activity extends Activity
 		btnDAw = (Button)findViewById(R.id.btnDAw);
 		btn_set_bg = (Button)findViewById(R.id.btn_set_bg);
 		activity_third2_ScrollView = (ScrollView)findViewById(R.id.activity_third2_ScrollView);
-		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
-		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
-		title_bar_btn_left.setText("< Back");
 		btnDAw.setText("禁用全部按钮");
-//		title_bar_btn_left.setTextColor(Color.parseColor("#ddf0f0f0"));
-		title_bar_title.setText("Button");
-//		title_bar_title.setTextColor(Color.parseColor("#ddf0f0f0"));
-		title_bar_btn_left.setOnClickListener(new OnClickListener()
-			{
-				@Override
-				public void onClick(View v)
-				{
-					finish();
-				}
-			});
 		btnDAw.setOnClickListener(new OnClickListener()
 			{
 				@Override
@@ -115,5 +111,9 @@ public class Third2Activity extends Activity
 			activity_third2_ScrollView.setBackgroundResource(R.drawable.lockscreen_107);
 			background = true;
 		}
+	}
+	public void initPtuiView()
+	{
+		ptuiTitleBack = (Button)findViewById(R.id.ptuiTitleBack);
 	}
 }

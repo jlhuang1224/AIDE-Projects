@@ -13,7 +13,7 @@
 		android:layout_height="wrap_content"
 		android:text="@string/ptui_second_introduction"
 		android:layout_width="wrap_content"
-		style="@style/textview_text_style_dark"/>
+		style="@style/textview_text_dark_style"/>
 
 </LinearLayout>
 

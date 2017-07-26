@@ -18,8 +18,7 @@ public class FourthActivity extends Activity
 	private Button btn1w;
 	private Button btn2w;
 	private Button btn_set_bg2;
-	private Button title_bar_btn_left;
-	private TextView title_bar_title;
+	private Button ptuiTitleBack;
 	private LinearLayout activityfourthLinearLayout2;
 	private Boolean background = true;
     @Override
@@ -31,7 +30,17 @@ public class FourthActivity extends Activity
 		{
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
-		SetAppTitle();
+		initPtuiView();
+		ptuiTitleBack.setText("<Edittext");
+		ptuiTitleBack.setVisibility(View.VISIBLE);
+		ptuiTitleBack.setOnClickListener(new OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					finish();
+				}
+			});
 		et1 = (EditText)findViewById(R.id.et1);
 		et2 = (EditText)findViewById(R.id.et2);
 		et1w = (EditText)findViewById(R.id.et1w);
@@ -42,19 +51,12 @@ public class FourthActivity extends Activity
 		btn2w = (Button)findViewById(R.id.btn2w);
 		btn_set_bg2 = (Button)findViewById(R.id.btn_set_bg2);
 		activityfourthLinearLayout2 = (LinearLayout) findViewById(R.id.activityfourthLinearLayout2);
-		btn_set_bg2.setText("点击切换背景");
+		btn_set_bg2.setText("切换背景");
 		btn1.setText("禁用EditText1");
 		btn2.setText("禁用EditText2");
 		btn1w.setText("禁用EditText1");
 		btn2w.setText("禁用EditText2");
-		title_bar_btn_left.setOnClickListener(new OnClickListener()
-			{
-				@Override
-				public void onClick(View v)
-				{
-					finish();
-				}
-			});
+
 		btn1.setOnClickListener(new OnClickListener()
 			{
 				@Override
@@ -139,22 +141,11 @@ public class FourthActivity extends Activity
 			});
 	}
 
-	private void SetAppTitle()
+	public void initPtuiView()
 	{
-		// TODO: Implement this method
-		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
-		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
-		title_bar_btn_left.setText("< Back");
-		title_bar_title.setText("EditText");
-		title_bar_btn_left.setOnClickListener(new OnClickListener()
-			{
-				@Override
-				public void onClick(View v)
-				{
-					finish();
-				}
-			});
-    }
+		ptuiTitleBack = (Button)findViewById(R.id.ptuiTitleBack);
+	};
+	
 	public void switchBackground()
 	{
 		if (background == true)

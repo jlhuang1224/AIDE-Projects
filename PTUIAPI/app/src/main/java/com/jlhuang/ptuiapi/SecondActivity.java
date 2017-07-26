@@ -8,8 +8,7 @@ import android.widget.*;
 
 public class SecondActivity extends Activity 
 {
-	private Button title_bar_btn_left;
-	private TextView title_bar_title;
+	private Button ptuiTitleBack;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -20,11 +19,10 @@ public class SecondActivity extends Activity
 		{
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
-		title_bar_btn_left = (Button)findViewById(R.id.title_bar_btn_left);
-		title_bar_title = (TextView) findViewById(R.id.title_bar_title);
-		title_bar_btn_left.setText("< Back");
-		title_bar_title.setText("TextView");
-		title_bar_btn_left.setOnClickListener(new OnClickListener()
+		initPtuiView();
+		ptuiTitleBack.setText("<TextView");
+		ptuiTitleBack.setVisibility(View.VISIBLE);
+		ptuiTitleBack.setOnClickListener(new OnClickListener()
 			{
 				@Override
 				public void onClick(View v)
@@ -32,6 +30,9 @@ public class SecondActivity extends Activity
 					finish();
 				}
 			});
-
+	}
+	public void initPtuiView()
+	{
+		ptuiTitleBack = (Button)findViewById(R.id.ptuiTitleBack);
 	}
 }

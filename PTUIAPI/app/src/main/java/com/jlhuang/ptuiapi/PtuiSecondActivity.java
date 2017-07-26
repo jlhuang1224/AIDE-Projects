@@ -46,7 +46,7 @@ public class PtuiSecondActivity extends Activity
 				@Override
 				public void onClick(View v)
 				{
-					Toast.makeText(PtuiSecondActivity.this, "You clicked appuiTitleRightBtn1", Toast.LENGTH_SHORT).show();
+					Toast.makeText(PtuiSecondActivity.this, "你点击了按钮1", Toast.LENGTH_SHORT).show();
 				}
 			});
 		ptuiTitleRightBtn2.setOnClickListener(new OnClickListener()

@@ -30,7 +30,7 @@
 		android:layout_weight="1.0"
 		android:gravity="center"
 		android:layout_centerInParent="true"
-		style="@style/textview_title_style_dark"
+		style="@style/textview_title_dark_style"
 		android:id="@+id/ptuiTitleTextView"
 		android:textSize="25sp"/>
 

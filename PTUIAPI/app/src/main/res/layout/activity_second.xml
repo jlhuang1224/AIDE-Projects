@@ -3,11 +3,11 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_height="match_parent"
 	android:layout_width="match_parent"
-	android:background="#000000"
+	android:background="#FFFFFF"
 	android:orientation="vertical">
 
 	<include
-		layout="@layout/title_bar"/>
+		layout="@layout/ptui_title"/>
 
 	<ScrollView
 		android:layout_height="wrap_content"
@@ -19,49 +19,89 @@
 			android:layout_height="wrap_content"
 			android:orientation="vertical">
 
-			<TextView
-				android:layout_width="wrap_content"
+			<LinearLayout
 				android:layout_height="wrap_content"
-				android:text="@string/textview_text_title_dark"
-				style="@style/textview_title_style_dark"/>
-
-			<TextView
-				android:layout_width="fill_parent"
-				android:layout_height="50dp"
-				android:background="#333333"/>
-
-			<TextView
 				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="5dp">
+
+				<TextView
+					android:layout_width="100dp"
+					android:layout_height="50dp"
+					android:background="#333333"
+					android:text="#333333"
+					android:textColor="#FFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/textview_text_title_dark"
+					style="@style/textview_title_dark_style"/>
+
+			</LinearLayout>
+
+			<LinearLayout
 				android:layout_height="wrap_content"
-				android:text="@string/textview_text_text_dark"
-				style="@style/textview_text_style_dark"/>
-
-			<TextView
-				android:layout_width="fill_parent"
-				android:layout_height="50dp"
-				android:background="#555555"/>
-
-			<TextView
 				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="5dp">
+
+				<TextView
+					android:layout_width="100dp"
+					android:layout_height="50dp"
+					android:background="#555555"
+					android:text="#555555"
+					android:textColor="#FFFFFF"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/textview_text_text_dark"
+					style="@style/textview_text_dark_style"/>
+
+			</LinearLayout>
+
+			<LinearLayout
 				android:layout_height="wrap_content"
-				android:text="@string/textview_text_title_light"
-				style="@style/textview_title_style_light"/>
-
-			<TextView
-				android:layout_width="fill_parent"
-				android:layout_height="50dp"
-				android:background="#f0f0f0"/>
-
-			<TextView
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="@string/textview_text_text_light"
-				style="@style/textview_text_style_light"/>
+				android:orientation="horizontal"
+				android:paddingTop="5dp">
 
-			<TextView
-				android:layout_width="fill_parent"
-				android:layout_height="50dp"
-				android:background="#e0e0e0"/>
+				<TextView
+					android:layout_width="100dp"
+					android:layout_height="50dp"
+					android:background="#f0f0f0"
+					android:text="#F0F0F0"
+					android:textColor="#000000"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/textview_text_title_light"
+					style="@style/textview_title_light_style"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal"
+				android:paddingTop="5dp">
+
+				<TextView
+					android:layout_width="100dp"
+					android:layout_height="50dp"
+					android:background="#e0e0e0"
+					android:textColor="#000000"
+					android:text="#E0E0E0"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/textview_text_text_light"
+					style="@style/textview_text_light_style"/>
+
+			</LinearLayout>
 
 		</LinearLayout>
 

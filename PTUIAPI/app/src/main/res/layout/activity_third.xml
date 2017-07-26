@@ -8,7 +8,7 @@
 	android:orientation="vertical">
 
 	<include
-		layout="@layout/title_bar"/>
+		layout="@layout/ptui_title"/>
 
 	<ScrollView
 		android:layout_width="fill_parent"
@@ -18,10 +18,12 @@
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
 			android:layout_gravity="center|top"
-			android:orientation="vertical">
+			android:orientation="vertical"
+			android:paddingLeft="20dp"
+			android:paddingTop="20dp">
 
 			<LinearLayout
-				android:layout_width="fill_parent"
+				android:layout_width="300dp"
 				android:layout_height="wrap_content"
 				android:orientation="horizontal">
 
@@ -29,23 +31,18 @@
 					android:id="@+id/btnL"
 					android:text="左Left"
 					android:layout_width="100dp"
-					android:layout_marginLeft="20dp"
-					android:layout_marginTop="20dp"
-					android:textColor="#555555"
 					style="@style/button_left_style"/>
 
 				<Button
 					android:id="@+id/btnC"
 					android:text="中Center"
 					android:layout_width="100dp"
-					android:layout_marginTop="20dp"
 					style="@style/button_center_style"/>
 
 				<Button
 					android:id="@+id/btnR"
 					android:text="右Right"
 					android:layout_width="100dp"
-					android:layout_marginTop="20dp"
 					style="@style/button_right_style"/>
 
 			</LinearLayout>
@@ -54,7 +51,6 @@
 				android:layout_width="300dp"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="20dp"
-				android:layout_marginLeft="20dp"
 				android:orientation="horizontal">
 
 				<Button
@@ -77,21 +73,18 @@
 				android:text="中间(单个)Center(One)"
 				android:layout_width="300dp"
 				android:layout_marginTop="20dp"
-				android:layout_marginLeft="20dp"
 				style="@style/button_center_one_style"/>
 
 			<Button
 				android:id="@+id/btnO"
 				android:text="Btn"
 				android:layout_marginTop="20dp"
-				android:layout_marginLeft="20dp"
 				style="@style/button_round_style"/>
 
 			<LinearLayout
 				android:layout_width="wrap_content"
 				android:layout_height="70dp"
 				android:layout_marginTop="20dp"
-				android:layout_marginLeft="20dp"
 				android:orientation="vertical">
 
 				<Button
@@ -101,15 +94,11 @@
 					style="@style/button_round_style"/>
 
 				<TextView
-					android:gravity="center"
 					android:text="文字Text"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginTop="2dp"
-					android:layout_gravity="center"
-					android:textColor="#555555"
-					android:singleLine="true"
-					android:textSize="15dp"/>
+					style="@style/frame_button_textview_style"/>
 
 			</LinearLayout>
 
@@ -118,7 +107,6 @@
 				android:text="禁用全部按钮"
 				android:layout_width="300dp"
 				android:layout_marginTop="20dp"
-				android:layout_marginLeft="20dp"
 				style="@style/button_center_one_style"/>
 
 			<Button
@@ -126,7 +114,6 @@
 				android:text="查看透明按钮"
 				android:layout_width="300dp"
 				android:layout_marginTop="20dp"
-				android:layout_marginLeft="20dp"
 				style="@style/button_center_one_style"
 				android:layout_marginBottom="10dp"/>
 

@@ -30,6 +30,8 @@
             android:name=".FourthActivity"/>
 	    <activity
             android:name=".FifthActivity"/>
+		<activity
+            android:name=".SixthActivity"/>
 	</application>
 
 </manifest>
