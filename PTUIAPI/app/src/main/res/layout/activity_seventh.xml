@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#F0F0F0"
+	android:id="@+id/activityseventhLinearLayout">
+
+	<include
+		layout="@layout/ptui_title"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:padding="20dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="圆的加载圈"
+			android:layout_width="wrap_content"
+			style="@style/textview_text_dark_style"/>
+
+		<ProgressBar
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			style="@style/progressbar_ring_style"
+			android:layout_marginTop="20dp"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="20dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="progressBarStyleHorizontal未知进度"
+				android:layout_width="wrap_content"
+				style="@style/textview_text_dark_style"/>
+
+		</LinearLayout>
+
+		<ProgressBar
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginTop="20dp"
+			android:id="@+id/activityseventhProgressBar1"
+			style="@style/progressbar_indeterminate_horizontal_style"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="progressBarStyleHorizontal按下面的按钮改变进度"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="20dp"
+			style="@style/textview_text_dark_style"/>
+
+		<ProgressBar
+			android:layout_width="match_parent"
+			android:layout_marginTop="20dp"
+			android:max="100"
+			style="@style/progressbar_horizontal_style"
+			android:id="@+id/activityseventhProgressBar2"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="20dp"
+			android:layout_gravity="center">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Progress"
+				android:layout_width="wrap_content"
+				style="@style/textview_text_dark_style"/>
+
+			<Button
+				android:text="-"
+				android:layout_width="100dp"
+				style="@style/button_left_style"
+				android:background="@drawable/button_left_shape_selector"
+				android:id="@+id/activityseventhButton1"/>
+
+			<Button
+				android:text="+"
+				android:layout_width="100dp"
+				style="@style/button_right_style"
+				android:id="@+id/activityseventhButton2"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="20dp"
+			android:layout_gravity="center">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Secondary Progress"
+				android:layout_width="wrap_content"
+				style="@style/textview_text_dark_style"/>
+
+			<Button
+				android:text="-"
+				android:layout_width="100dp"
+				style="@style/button_left_style"
+				android:background="@drawable/button_left_shape_selector"
+				android:id="@+id/activityseventhButton3"/>
+
+			<Button
+				android:text="+"
+				android:layout_width="100dp"
+				style="@style/button_right_style"
+				android:id="@+id/activityseventhButton4"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

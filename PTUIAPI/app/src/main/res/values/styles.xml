@@ -118,6 +118,18 @@
 		<item name="android:background">#60000000</item>
 		<item name="android:button">@drawable/radiobutton_selector</item>
 	</style>
+	<style name="progressbar_ring_style" parent="@android:style/Widget.ProgressBar">
+		<item name="android:indeterminateDrawable">@drawable/progressbar_ring</item>
+		<item name="android:indeterminateDuration">700</item>
+	</style>
+	<style name="progressbar_indeterminate_horizontal_style" parent="@android:style/Widget.ProgressBar.Horizontal">
+		<item name="android:indeterminate">true</item>
+		<item name="android:indeterminateDrawable">@drawable/progressbar_indeterminate_horizontal</item>
+	</style>
+	<style name="progressbar_horizontal_style" parent="@android:style/Widget.ProgressBar.Horizontal">
+		<item name="android:progressDrawable">@drawable/progressbar_horizontal_shape</item>
+		<item name="android:layout_height">6dp</item>
+	</style>
 	<style name="ptui_title_button_back_style">
 		<item name="android:layout_height">70dp</item>
 		<item name="android:layout_width">wrap_content</item>

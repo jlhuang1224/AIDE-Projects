@@ -13,7 +13,7 @@ public class MainActivity extends Activity
 	private TextView title_bar_title;
 	private Button view_ptui_btn;
 	private String[] data = { "TextView", "Button", "EditText", "CheckBox",
-		"RadioButton & RadioGroup", "ProgressBar(round)", "ProgressBar", "SeekBar", "Switch", "Dialog" };
+		"RadioButton & RadioGroup", "ProgressBar", "SeekBar", "Switch", "Dialog" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -86,6 +86,15 @@ public class MainActivity extends Activity
 										Intent i = new Intent(MainActivity.this,
 															  SixthActivity.class);
 										startActivity(i);
+									}
+									else
+									{
+										if (arg2 == 5)
+										{
+											Intent i = new Intent(MainActivity.this,
+																  SeventhActivity.class);
+											startActivity(i);
+										}
 									}
 								}
 							}
