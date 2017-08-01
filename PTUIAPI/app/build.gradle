@@ -9,7 +9,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 170730
-        versionName "1.2.7.7alpha"
+        versionName "1.2.8"
     }
     buildTypes {
         release {

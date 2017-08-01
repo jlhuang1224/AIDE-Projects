@@ -9,19 +9,46 @@
 	<include
 		layout="@layout/ptui_title"/>
 
-	<SeekBar
+	<LinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:padding="20dp"
-		android:id="@+id/activityeighthSeekBar"/>
+		android:orientation="vertical"
+		android:padding="20dp">
 
-	<Button
-		android:layout_height="wrap_content"
-		android:text="禁用"
-		android:layout_width="300dp"
-		android:layout_gravity="center"
-		style="@style/button_center_one_style"
-		android:id="@+id/activityeighthButton"/>
+		<SeekBar
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:max="300"
+			style="@style/seekbar_style"
+			android:id="@+id/activityeighthSeekBar1"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="禁用"
+			android:layout_width="300dp"
+			android:layout_gravity="center"
+			style="@style/button_center_one_style"
+			android:id="@+id/activityeighthButton1"
+			android:layout_marginTop="20dp"/>
+
+		<SeekBar
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:max="300"
+			style="@style/seekbar_style"
+			android:id="@+id/activityeighthSeekBar2"
+			android:layout_marginTop="20dp"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="禁用"
+			android:layout_width="300dp"
+			android:layout_gravity="center"
+			style="@style/button_center_one_style"
+			android:id="@+id/activityeighthButton2"
+			android:layout_marginTop="20dp"/>
+
+	</LinearLayout>
 
 </LinearLayout>
 

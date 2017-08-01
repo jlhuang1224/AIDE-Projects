@@ -8,8 +8,10 @@ import android.widget.*;
 
 public class EighthActivity extends Activity
 {
-	private SeekBar activityeighthSeekBar;
-	private Button activityeighthButton;
+	private SeekBar activityeighthSeekBar1;
+	private SeekBar activityeighthSeekBar2;
+	private Button activityeighthButton1;
+	private Button activityeighthButton2;
 	private Button ptuiTitleBack;
 	private Boolean background = true;
 
@@ -33,24 +35,42 @@ public class EighthActivity extends Activity
 					finish();
 				}
 			});
-		activityeighthSeekBar = (SeekBar)findViewById(R.id.activityeighthSeekBar);
-		activityeighthButton = (Button)findViewById(R.id.activityeighthButton);
-		activityeighthButton.setOnClickListener(new OnClickListener()
+		activityeighthSeekBar1 = (SeekBar)findViewById(R.id.activityeighthSeekBar1);
+		activityeighthSeekBar2 = (SeekBar)findViewById(R.id.activityeighthSeekBar2);
+		activityeighthButton1 = (Button)findViewById(R.id.activityeighthButton1);
+		activityeighthButton2 = (Button)findViewById(R.id.activityeighthButton2);
+		activityeighthButton1.setOnClickListener(new OnClickListener()
 		{
 			@Override
 			public void onClick(View v)
 			{
-				if(activityeighthSeekBar.isEnabled())
+				if(activityeighthSeekBar1.isEnabled())
 				{
-					activityeighthSeekBar.setEnabled(false);
-					activityeighthButton.setText("启用");
+					activityeighthSeekBar1.setEnabled(false);
+					activityeighthButton1.setText("启用");
 				}else{
-					activityeighthSeekBar.setEnabled(true);
-					activityeighthButton.setText("禁用");
+					activityeighthSeekBar1.setEnabled(true);
+					activityeighthButton1.setText("禁用");
 				}
 				
 			}
 		});
+		activityeighthButton2.setOnClickListener(new OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					if(activityeighthSeekBar2.isEnabled())
+					{
+						activityeighthSeekBar2.setEnabled(false);
+						activityeighthButton2.setText("启用");
+					}else{
+						activityeighthSeekBar2.setEnabled(true);
+						activityeighthButton2.setText("禁用");
+					}
+
+				}
+			});
 	}
 	public void initPtuiView()
 	{
