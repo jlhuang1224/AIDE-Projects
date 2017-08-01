@@ -120,11 +120,12 @@
 	</style>
 	<style name="progressbar_ring_style" parent="@android:style/Widget.ProgressBar">
 		<item name="android:indeterminateDrawable">@drawable/progressbar_ring</item>
-		<item name="android:indeterminateDuration">700</item>
+		<item name="android:indeterminateDuration">800</item>
 	</style>
 	<style name="progressbar_indeterminate_horizontal_style" parent="@android:style/Widget.ProgressBar.Horizontal">
 		<item name="android:indeterminate">true</item>
 		<item name="android:indeterminateDrawable">@drawable/progressbar_indeterminate_horizontal</item>
+		<item name="android:layout_height">8dp</item>
 	</style>
 	<style name="progressbar_horizontal_style" parent="@android:style/Widget.ProgressBar.Horizontal">
 		<item name="android:progressDrawable">@drawable/progressbar_horizontal_shape</item>

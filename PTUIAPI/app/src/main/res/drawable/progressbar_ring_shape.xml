@@ -6,7 +6,7 @@
 	<gradient
 		android:startColor="#FFFFFF"
 		android:endColor="#00BF00"
-		android:angle="0"
+		android:angle="90"
 		android:type="sweep" />
 <!-- 描边 
 	<stroke 
