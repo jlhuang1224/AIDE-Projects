@@ -104,6 +104,15 @@ public class MainActivity extends Activity
 																	  EighthActivity.class);
 												startActivity(i);
 											}
+											else
+											{
+												if (arg2 == 7)
+												{
+													Intent i = new Intent(MainActivity.this,
+																		  NinthActivity.class);
+													startActivity(i);
+												}
+											}
 										}
 									}
 								}
