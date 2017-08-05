@@ -140,13 +140,11 @@
 		<item name="android:background">@drawable/togglebutton_shape_selector</item>
 		<item name="android:textColor">#555555</item>
 		<item name="android:layout_height">50dp</item>
-		<item name="android:textSize">18sp</item>
 	</style>
 	<style name="tooglebutton_translucent_style">
 		<item name="android:background">@drawable/togglebutton_shape_translucent_selector</item>
 		<item name="android:textColor">#eef0f0f0</item>
 		<item name="android:layout_height">50dp</item>
-		<item name="android:textSize">18sp</item>
 	</style>
 	<style name="ptui_title_button_back_style">
 		<item name="android:layout_height">70dp</item>

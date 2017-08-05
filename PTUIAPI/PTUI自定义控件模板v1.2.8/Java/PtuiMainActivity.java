@@ -6,6 +6,7 @@ import android.os.*;
 import android.view.*;
 import android.widget.*;
 import android.widget.AdapterView.*;
+import com.jlhuang.uiapi.*;
 
 public class PtuiMainActivity extends Activity
 {

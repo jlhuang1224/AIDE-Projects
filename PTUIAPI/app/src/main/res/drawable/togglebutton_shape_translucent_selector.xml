@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+	<!-- -->
+    <item android:state_checked="true" android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/togglebutton_shape_checked_enabled_nopressed_translucent"/>
+	<!-- -->
+    <item android:state_checked="false" android:state_enabled="true" android:state_pressed="false" android:drawable="@drawable/togglebutton_shape_nochecked_enabled_nopressed_translucent"/>
+	<!-- -->
+    <item android:state_checked="true" android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/togglebutton_shape_checked_enabled_pressed_translucent"/>
+	<!-- -->
+    <item android:state_checked="false" android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/togglebutton_shape_nochecked_enabled_pressed_translucent"/>
+	<!-- -->
+    <item android:state_checked="true" android:state_enabled="false" android:drawable="@drawable/togglebutton_shape_checked_disabled_translucent"/>
+	<!-- -->
+    <item android:state_checked="false" android:state_enabled="false" android:drawable="@drawable/togglebutton_shape_nochecked_disabled_translucent"/>
+</selector>

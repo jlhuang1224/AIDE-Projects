@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list android:oneshot="false"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate01" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate02" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate03" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate04" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate05" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate06" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate07" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate08" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate09" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate10" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate11" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate12" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate13" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate14" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate15" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate16" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate17" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate18" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate19" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate20" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate21" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate22" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate23" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate24" />
+	<item android:duration="20" android:drawable="@drawable/progressbar_horizontal_indeterminate25" />
+</animation-list>

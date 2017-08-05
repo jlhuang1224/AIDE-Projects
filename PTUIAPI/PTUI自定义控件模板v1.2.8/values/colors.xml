@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="ptui_title_back_normal">#333333</drawable>
+	<drawable name="ptui_title_back_pressed">#bb333333</drawable>
+</resources>
+

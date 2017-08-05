@@ -13,7 +13,7 @@ public class MainActivity extends Activity
 	private TextView title_bar_title;
 	private Button view_ptui_btn;
 	private String[] data = { "TextView", "Button", "EditText", "CheckBox",
-		"RadioButton & RadioGroup", "ProgressBar", "SeekBar", "ToogleButton", 
+		"RadioButton & RadioGroup", "ProgressBar", "SeekBar", "ToggleButton", 
 		"Switch", "DatePicker", "TimePicker", "NumberPicker", "ViewPager", "Dialog"};
 
 	@Override
