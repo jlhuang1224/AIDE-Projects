@@ -14,103 +14,86 @@
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
 		android:orientation="horizontal"
+		android:layout_marginBottom="20dp"
+		android:padding="20dp"
 		android:background="#F0F0F0">
 
-		<LinearLayout
-			android:layout_height="wrap_content"
+		<ToggleButton
 			android:layout_width="wrap_content"
-			android:orientation="horizontal"
-			android:padding="20dp">
+			android:background="@drawable/togglebutton_shape_selector"
+			android:id="@+id/activityninthToggleButton1"
+			style="@style/tooglebutton_style"
+			android:layout_gravity="center"/>
 
-			<ToggleButton
-				android:layout_width="wrap_content"
-				android:id="@+id/activityninthToggleButton1"
-				style="@style/tooglebutton_style"/>
-
-			<Button
-				android:text="禁用"
-				android:layout_width="wrap_content"
-				style="@style/button_center_one_style"
-				android:id="@+id/activityninthButton1"
-				android:layout_marginLeft="10dp"/>
-
-		</LinearLayout>
-
-		<LinearLayout
-			android:layout_height="wrap_content"
+		<Button
+			android:text="禁用"
 			android:layout_width="wrap_content"
-			android:orientation="horizontal"
-			android:padding="20dp">
+			style="@style/button_center_one_style"
+			android:id="@+id/activityninthButton1"
+			android:layout_marginLeft="10dp"
+			android:layout_gravity="center"/>
 
-			<ToggleButton
-				android:layout_width="wrap_content"
-				android:id="@+id/activityninthToggleButton2"
-				style="@style/tooglebutton_style"/>
+		<ToggleButton
+			android:layout_width="wrap_content"
+			android:id="@+id/activityninthToggleButton2"
+			style="@style/tooglebutton_style"
+			android:layout_marginLeft="10dp"
+			android:gravity="center"
+			android:layout_gravity="center"/>
 
-			<Button
-				android:text="禁用"
-				android:layout_width="wrap_content"
-				style="@style/button_center_one_style"
-				android:id="@+id/activityninthButton2"
-				android:layout_marginLeft="10dp"/>
-
-		</LinearLayout>
+		<Button
+			android:text="禁用"
+			android:layout_width="wrap_content"
+			style="@style/button_center_one_style"
+			android:id="@+id/activityninthButton2"
+			android:layout_marginLeft="10dp"
+			android:layout_gravity="center"/>
 
 	</LinearLayout>
 
 	<LinearLayout
 		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:orientation="horizontal">
+		android:layout_width="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="20dp">
 
-		<LinearLayout
-			android:layout_height="wrap_content"
+		<ToggleButton
 			android:layout_width="wrap_content"
-			android:orientation="horizontal"
-			android:padding="20dp">
+			android:id="@+id/activityninthToggleButton3"
+			style="@style/tooglebutton_translucent_style"/>
 
-			<ToggleButton
-				android:layout_width="wrap_content"
-				android:id="@+id/activityninthToggleButton3"
-				style="@style/tooglebutton_translucent_style"/>
-
-			<Button
-				android:text="禁用"
-				android:layout_width="wrap_content"
-				style="@style/button_center_one_translucent_style"
-				android:id="@+id/activityninthButton3"
-				android:layout_marginLeft="10dp"/>
-
-		</LinearLayout>
-
-		<LinearLayout
-			android:layout_height="wrap_content"
+		<Button
+			android:text="禁用"
 			android:layout_width="wrap_content"
-			android:orientation="horizontal"
-			android:padding="20dp">
+			style="@style/button_center_one_translucent_style"
+			android:id="@+id/activityninthButton3"
+			android:layout_marginLeft="10dp"/>
 
-			<ToggleButton
-				android:layout_width="wrap_content"
-				android:id="@+id/activityninthToggleButton4"
-				style="@style/tooglebutton_translucent_style"/>
+		<ToggleButton
+			android:layout_width="wrap_content"
+			android:id="@+id/activityninthToggleButton4"
+			style="@style/tooglebutton_translucent_style"
+			android:layout_marginLeft="10dp"/>
 
-			<Button
-				android:text="禁用"
-				android:layout_width="wrap_content"
-				style="@style/button_center_one_translucent_style"
-				android:id="@+id/activityninthButton4"
-				android:layout_marginLeft="10dp"/>
-
-		</LinearLayout>
+		<Button
+			android:layout_height="wrap_content"
+			android:text="禁用"
+			android:layout_width="wrap_content"
+			style="@style/button_center_one_translucent_style"
+			android:id="@+id/activityninthButton4"
+			android:layout_marginLeft="10dp"/>
 
 	</LinearLayout>
 
 	<Button
+		android:layout_height="wrap_content"
 		android:text="切换背景"
 		android:layout_width="300dp"
-		android:layout_marginLeft="20dp"
+		android:layout_marginLeft="10dp"
 		android:id="@+id/activityninthButton5"
-		style="@style/button_center_one_translucent_style"/>
+		style="@style/button_center_one_translucent_style"
+		android:layout_marginTop="10dp"/>
 
 </LinearLayout>
 
