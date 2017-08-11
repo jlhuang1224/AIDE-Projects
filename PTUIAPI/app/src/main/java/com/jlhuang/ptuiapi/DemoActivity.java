@@ -21,7 +21,7 @@ public class DemoActivity extends Activity
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 		}
 		initPtuiView();
-		ptuiTitleBack.setText("<ProgressBar");
+		ptuiTitleBack.setText("<Demo");
 		ptuiTitleBack.setVisibility(View.VISIBLE);
 		ptuiTitleBack.setOnClickListener(new OnClickListener()
 			{

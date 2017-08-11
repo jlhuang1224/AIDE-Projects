@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">PTUI API</string>
 	<string name="view_ptui_demo">Pythagoras Tree User Interface</string>
-	<string name="title_bar_right_button_text">1.2.9</string>
+	<string name="title_bar_right_button_text">1.2.10</string>
 	<string name="textview_text_title_dark">标题文本：灰黑</string>
 	<string name="textview_text_text_dark">内容文本：灰</string>
 	<string name="textview_text_title_light">标题文本：白</string>

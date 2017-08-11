@@ -8,8 +8,8 @@ android {
         applicationId "com.jlhuang.ptuiapi"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 170806
-        versionName "1.2.9.5alpha"
+        versionCode 170811
+        versionName "1.2.10"
     }
     buildTypes {
         release {

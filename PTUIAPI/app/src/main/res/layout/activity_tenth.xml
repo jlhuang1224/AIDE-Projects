@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/lockscreen_006"
+	android:id="@+id/activitytenthLinearLayout">
+
+	<include
+		layout="@layout/ptui_title"/>
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:background="#F0F0F0"
+				android:padding="20dp">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<Switch
+						
+						android:thumb="@drawable/switch_notext_thumb_selector"
+						android:track="@drawable/switch_notext_track_selector"
+						android:thumbTextPadding="0dp"
+						android:switchMinWidth="55dp"
+						android:switchPadding="0dp"
+						android:textOn="        "
+						android:textOff="        "
+
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:id="@+id/activitytenthSwitch1"/>
+
+					<Switch
+						
+						android:thumb="@drawable/switch_notext_thumb_selector"
+						android:track="@drawable/switch_notext_track_selector"
+						android:thumbTextPadding="0dp"
+						android:switchMinWidth="55dp"
+						android:switchPadding="0dp"
+						android:textOn="        "
+						android:textOff="        "
+
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:id="@+id/activitytenthSwitch2"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="300dp"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="20dp">
+
+					<Button
+						android:layout_width="150dp"
+						android:textColor="#555555"
+						style="@style/button_left_style"
+						android:text="禁用"
+						android:id="@+id/activitytenthButton1"/>
+
+					<Button
+						android:layout_width="150dp"
+						style="@style/button_right_style"
+						android:text="禁用"
+						android:id="@+id/activitytenthButton2"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:padding="20dp">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:orientation="horizontal">
+
+					<Switch
+						android:thumb="@drawable/switch_notext_thumb_selector_translucent"
+						android:track="@drawable/switch_notext_track_selector_translucent"
+						android:thumbTextPadding="0dp"
+						android:switchMinWidth="55dp"
+						android:switchPadding="0dp"
+						android:textOn="        "
+						android:textOff="        "
+
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:id="@+id/activitytenthSwitch3"/>
+
+					<Switch
+						android:thumb="@drawable/switch_notext_thumb_selector_translucent"
+						android:track="@drawable/switch_notext_track_selector_translucent"
+						android:thumbTextPadding="0dp"
+						android:switchMinWidth="55dp"
+						android:switchPadding="0dp"
+						android:textOn="        "
+						android:textOff="        "
+
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:id="@+id/activitytenthSwitch4"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="300dp"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginTop="20dp">
+
+					<Button
+						android:layout_width="150dp"
+						style="@style/button_left_translucent_style"
+						android:text="禁用"
+						android:id="@+id/activitytenthButton3"/>
+
+					<Button
+						android:layout_width="150dp"
+						style="@style/button_right_translucent_style"
+						android:text="禁用"
+						android:id="@+id/activitytenthButton4"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<Button
+				android:text="切换背景"
+				android:layout_width="300dp"
+				android:layout_marginLeft="20dp"
+				style="@style/button_center_one_translucent_style"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="20dp"
+				android:id="@+id/activitytenthButton5"/>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+
